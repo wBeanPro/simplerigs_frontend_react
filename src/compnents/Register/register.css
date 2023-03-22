@@ -1,0 +1,25 @@
+.form-control {
+    border:none !important;
+    font-size: 20px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.form-control:focus {
+    border: none !important;
+    border-color: #fff !important;
+}
+
+
+.flag-dropdown {
+    border: none !important
+}
+
+.phone_input input:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.phone_input input {
+    width: 260px !important;
+}

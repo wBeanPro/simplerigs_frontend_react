@@ -1,0 +1,100 @@
+.withdraw-modal .modal-header h4 {
+    font-weight: bold;
+    margin: 0 auto;
+    margin-left: 40px;
+}
+.withdraw-modal {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: 'rajdhani';
+}
+.withdraw-modal .modal-content {
+    width: 400px;
+}
+.withdraw-modal .modal-header {
+    border: none;
+}
+.withdraw-modal .modal-header button {
+    background-color: white;
+    border-radius: 100px;
+    color: #449552;
+    margin-top: -60px !important;
+    margin-right: -30px !important;
+    border: solid 3px #449552;
+    opacity: 1 !important;
+}
+
+.withdraw-modal .modal-header button:hover {
+    opacity: .5 !important;
+}
+.withdraw-modal .modal-content {
+    background-color: #49925B !important;
+    border-radius: 20px !important;
+    color: white;
+}
+
+.withdraw-modal .modal-footer {
+    border: none;
+    justify-content: space-evenly;
+}
+
+.withdraw-modal .modal-footer button{
+    display: flex;
+    align-items: center;
+    background-color: #6abe66;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border: 3px solid #449552;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    width: 100px;
+    padding: 10px 12px;
+    margin-right: 16px;
+    line-height: 1;
+}
+.withdraw-modal .modal-footer button:hover{
+    color: #fff;
+    background: transparent;
+    transition: 0.3s;
+    border: 3px solid #6abe66;
+}
+.withdraw-modal .modal-body input {
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #6abe66;
+    padding: 3px 10px;
+    border-radius: 8px;
+    width: 350px;
+}
+.withdraw-modal .modal-body input:focus {
+    outline: #6abe66;
+    border: 3px solid #6abe66;
+}
+.withdraw-modal .modal-body{
+   display: flex;
+   justify-content: center;
+}
+@media (max-width: 1050px) {
+    .withdraw-modal .modal-header h4 {
+        margin-left: 0px;
+    }
+    .withdraw-modal .modal-footer {
+        padding-top: 0;
+    }
+    .withdraw-modal .modal-header {
+        padding-bottom: 0;
+    }
+    .withdraw-modal .modal-content {
+        width: auto;
+    }  
+    .withdraw-modal .modal-body input {
+        width: auto;
+    }
+}

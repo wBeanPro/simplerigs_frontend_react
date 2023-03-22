@@ -1,0 +1,26 @@
+.nav-link-wrap{
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.nav-link-wrap li {
+    padding-left: 0px !important;
+}
+
+.nav-link-wrap li a{
+    text-decoration: none;
+    color: #595A5B;
+    font-size: 0.7vw;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 1.3vh 1vw;
+}
+.nav-link-wrap li a.active{
+    color: #fff !important;
+    background-color: #8bd66c;
+    width: 100% !important;
+}
+.nav-link-wrap li a.active:hover{
+   border: 0;
+}

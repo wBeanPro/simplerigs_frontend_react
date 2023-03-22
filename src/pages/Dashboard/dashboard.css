@@ -1,0 +1,246 @@
+.dashboard-root-container {
+    background: url(../../assets/images/checkout-bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    font-family: 'rajdhani';
+}
+
+.terms {
+    height: 100% !important;
+    background: url(../../assets/images/terms_back.png) !important;
+    background-size: 100% 100% !important;
+}
+
+.checkout-truck {
+    position: absolute;
+    right: 45px;
+    bottom: 15px;
+}
+
+.checkout-truck img {
+    width: 130px;
+}
+
+.dashboard_transfer {
+    color: #1E9E39 !important;
+}
+.mobile-revenue-list {
+    max-height: 726px;
+    overflow-y: auto;
+}
+@media (max-width:1024px) {
+    .dashboard-root-container {
+        background: linear-gradient(180deg, #7DF2FD 1.68%, #FED480 100%);
+        --tw-bg-opacity: 59%;
+    }
+    .checkout-truck {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .checkout-truck img {
+        max-width: 150px;
+        display: none;
+    }
+}
+
+.sidebar {
+    transition: 0.5s;
+}
+
+.main-container {
+    transition: 0.5s;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -32px;
+    z-index: 1;
+    position: relative;
+    max-width: 400px;
+}
+
+.add-btn-wrap .link-wrap {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 0px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-btn-wrap .link-wrap a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.add-btn-wrap .link-wrap:hover {
+    background-color: #49925B;
+    transition: .5s;
+}
+
+.add-btn-wrap .link-wrap:hover a {
+    color: white !important;
+}
+
+.payout-heading {
+    color: #49925B;
+    font-weight: 700;
+}
+
+.payout ul {
+    max-height: 375px;
+    overflow-y: auto;
+    width: 195px;
+    color: #49925B;
+}
+
+.payout ul li {
+    margin-top: 18px;
+}
+
+.payout h4 {
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: black;
+    -webkit-text-stroke: 0.5px;
+}
+
+/* .payout p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px;
+    color: #7F7F7F;
+} */
+
+.revenue h3 {
+    color: #49925b;
+    font-weight: 700;
+}
+
+.revenue_header {
+    background: #D9D9D9;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.revenue_header p {
+    margin-bottom: 0px !important;
+}
+
+.revenue_mining_detail p {
+    margin-bottom: 0px !important;
+}
+
+.revenue_mining_detail {
+    border: 1px solid #CDCDCD;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.planListmodal {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.planmodal_header p {
+    font-size: 95%;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.desktop-logout {
+    display: block;
+}
+
+.mobile-logout {
+    display: none;
+}
+
+@media (max-width:1024px) {
+    .sidebar {
+        display: none;
+        transition: 0.5s;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:850px) {
+    .mobile-logout {
+        display: block;
+    }
+
+    .plan-payout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .plan-container {
+        margin-bottom: 24px;
+    }
+}
+
+
+@media (max-width:480px) {
+
+    .plan {
+        margin-top: -24px;
+    }
+
+    .plan .plan-content {
+        width: 100%;
+        max-width: 300px;
+        padding: 0px 16px;
+    }
+
+    .plan svg {
+        width: 300px;
+        max-height: 100px;
+    }
+
+    .add-btn-wrap {
+        margin-top: -28px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width:380px) {
+
+    .plan {
+        margin-top: -24px;
+    }
+
+    .plan .plan-content {
+        width: 100%;
+        max-width: 275px;
+        padding: 0px 16px;
+    }
+
+    .plan svg {
+        width: 275px;
+        max-height: 100px;
+    }
+
+    .add-btn-wrap {
+        margin-top: -28px;
+        max-width: 275px;
+    }
+}

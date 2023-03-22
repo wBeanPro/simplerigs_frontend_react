@@ -1,0 +1,226 @@
+.plan-payout-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+}
+.plan-container{
+}
+
+.plan-container .plan-heading{
+    color: #49925B;
+    font-weight: 700;
+}
+.plan {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: -50px;
+    position: relative;
+}
+
+.plan p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.plan-left {
+    /* margin-right: 10px; */
+}
+
+.plan .plan-content {
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    /* width: 230px; */
+    width: 100%;
+    max-width: 400px;
+    padding: 0px 16px;
+}
+
+.plan svg {
+    width: 400px;
+    max-height: 200px;
+}
+.plan-withdraw-btn-wrap {
+    position: relative;
+    margin-left: auto;
+    right: 10px;
+}
+.plan-withdraw-btn-wrap button{
+    display: flex;
+    align-items: center;
+    background-color: #6abe66;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border: 3px solid #449552;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    padding: 10px 12px;
+    margin-right: 16px;
+    line-height: 1;
+}
+.plan-withdraw-btn-wrap button:hover{
+    color: #fff;
+    background: transparent;
+    transition: 0.3s;
+    border: 3px solid #6abe66;
+}
+.plan-withdraw-btn-wrap button span{
+    display: block;
+    margin-left: 10px;
+}
+
+.modal {
+    background: rgba(255, 255, 255, 0.582);
+}
+
+.plan-modal {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: 'rajdhani';
+}
+
+.plan-modal .modal-dialog {
+    width: 500px !important;
+}
+
+.plan-modal .modal-content {
+    background-color: #49925B !important;
+    border-radius: 20px !important;
+    color: white;
+}
+
+.plan-modal .modal-header {
+    padding: 25px 16px 5px 16px !important;
+    border-bottom: 0px !important;
+}
+
+.plan-modal .modal-header-inner {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 80px 0px 16px;
+}
+
+
+
+.plan-modal .modal-header-inner .number {
+    font-weight: 100;
+}
+
+.plan-modal .modal-header button {
+    background-color: white;
+    border-radius: 100px;
+    color: #449552;
+    margin-top: -120px !important;
+    margin-right: -30px !important;
+    border: solid 3px #449552;
+    opacity: 1 !important;
+}
+
+.plan-modal .modal-header button:hover {
+    opacity: .5 !important;
+}
+
+.plan-modal .modal-body h5 {
+    font-weight: 100;
+}
+
+.plan-modal .modal-footer {
+    border-top: 0px !important
+}
+
+.plan-modal .modal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding: 0px 16px 25px 32px !important;
+}
+
+.plan-modal .modal-footer-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 0px;
+}
+
+.plan-modal .modal-footer a {
+    background-color: #6ABE66;
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.plan-modal .modal-footer a .arrow-right {
+    margin-left: 10px;
+}
+
+.plan-modal .modal-footer a:hover {
+    background-color: transparent;
+    border: solid 3px #6ABE66;
+    color: white;
+}
+
+.modal-header-left h4, .modal-header-right h4{
+    font-weight: 700;
+}
+.modal-header-left h4{
+    font-size: 30px;
+}
+.modal-body ul li h5{
+   font-weight: 700;
+   font-size: 24px; 
+   -webkit-text-stroke: 0.5px;
+}
+.modal-footer h5{
+    font-size: 22px;
+    line-height: 1;
+    -webkit-text-stroke: 1px;
+}
+
+
+@media (max-width:850px){
+    .plan-payout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .plan-modal .modal-content {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+}
+@media (max-width:480px){
+    .plan {
+    margin-top: -24px;
+}
+ .plan .plan-content {
+    width: 100%;
+    max-width: 300px;
+    padding: 0px 16px;
+}
+
+.plan svg {
+    width: 300px;
+    max-height: 100px;
+}
+}
+

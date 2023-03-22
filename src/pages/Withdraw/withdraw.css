@@ -1,0 +1,164 @@
+.withdraw-container{
+    max-width: 1080px;
+}
+.widthdraw-balance-container{
+    display: flex;
+    gap: 50px;
+    margin: 24px 0px;
+}
+.widthdraw-balance-content{
+    flex-basis: 50%;
+}
+.widthdraw-balance-container .input-wrap {
+    background: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.widthdraw-balance-container .input-wrap input {
+    border: 0px;
+    color: #7F7F7F;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.widthdraw-balance-container .input-wrap input:focus-visible {
+    outline: 0px;
+}
+
+.widthdraw-balance-container .input-wrap button {
+    background: #C4C4C4;
+    border: 0px;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widthdraw-balance-container .balance-descp .description {
+    width: 350px;
+    height: 160px;
+    background: #cae8bf;
+    border-radius: 8px;
+    padding: 20px;
+    color: #595A5B;
+    font-family: 'Montserrat';
+}
+
+.widthdraw-balance-container .balance-descp .description h4 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.widthdraw-balance-container .balance-descp .description p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.withdraw-btn-wrap button{
+    display: flex;
+    align-items: center;
+    background: #449552;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border: 3px solid #449552;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    padding: 10px 24px;
+    margin-right: 16px;
+    line-height: 1;
+}
+.withdraw-btn-wrap button:hover{
+    color: #449552;
+    background: transparent;
+    transition: 0.3s;
+}
+.withdraw-btn-wrap button span{
+    display: block;
+    margin-left: 10px;
+}
+
+.previous-transaction {
+    margin-top: 60px;
+}
+
+.previous-transaction h3 {
+    color: #49925B;
+    font-weight: 700;
+}
+
+.previous-transaction table {
+    width: 500px;
+    display: block;
+    overflow-x: auto;
+}
+
+.previous-transaction table thead {
+    border-bottom: solid 2px #D8D8D8;
+    display: block;
+
+}
+
+.previous-transaction table thead tr {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    -webkit-text-stroke: 0.5px;
+    display: table;
+    width: 100%;
+}
+
+.previous-transaction table thead tr th {
+    width: 50%;
+}
+
+.previous-transaction table tbody tr {
+    border-bottom: solid 1px #D8D8D8;
+    font-size: 18px;
+    color: #7F7F7F;
+    display: table;
+    width: 100%;
+}
+
+.previous-transaction table tbody tr td {
+    width: 50%;
+}
+
+.previous-transaction table tr .first-field {
+    font-weight: 700;
+    -webkit-text-stroke: 0.1px;
+}
+.previous-transaction table tbody {
+    display: block;
+    height: 90px;
+    overflow-y: auto;
+}
+
+@media (max-width:750px){
+   .widthdraw-balance-container {
+    flex-direction: column;
+    gap: 1px;
+    margin: 24px 0px;
+} 
+.widthdraw-balance-container .balance-descp .description {
+    width: 100%;
+    height: 160px;
+}
+.previous-transaction table{
+    width: 100%;
+}
+}

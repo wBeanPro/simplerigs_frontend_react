@@ -1,0 +1,12 @@
+.navbar_active a.active{
+    font-weight: 600;
+}
+
+.navbar_active a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.profile_icon {
+    width: 100%;
+}

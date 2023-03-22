@@ -1,0 +1,26 @@
+.mobile_nav_link_wrap{
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.mobile_nav_link_wrap li {
+    padding-left: 0px !important;
+}
+
+.mobile_nav_link_wrap li a{
+    text-decoration: none;
+    color: #595A5B;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 14px 20px;
+}
+.mobile_nav_link_wrap li a.active{
+    color: #fff !important;
+    background-color: #8bd66c !important;
+    width: 100% !important;
+}
+.mobile_nav_link_wrap li a.active:hover{
+   border: 0;
+}

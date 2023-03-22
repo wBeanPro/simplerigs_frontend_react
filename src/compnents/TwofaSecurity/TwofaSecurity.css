@@ -1,0 +1,112 @@
+.twofa-modal {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: 'rajdhani';
+}
+
+.twofa-modal .modal-header h4 {
+    font-weight: bold;
+    margin: 0 auto;
+    margin-left: 95px;
+}
+
+.twofa-modal .modal-header {
+    border: none;
+}
+
+.twofa-modal .modal-header button {
+    background-color: white;
+    border-radius: 100px;
+    color: #449552;
+    margin-top: -60px !important;
+    margin-right: -30px !important;
+    border: solid 3px #449552;
+    opacity: 1 !important;
+}
+
+.twofa-modal .modal-header button:hover {
+    opacity: .5 !important;
+}
+
+.twofa-modal .modal-content {
+    background-color: #49925B !important;
+    border-radius: 20px !important;
+    color: white;
+}
+
+.twofa-modal .modal-footer {
+    border: none;
+    justify-content: space-evenly;
+}
+
+.twofa-modal .modal-footer button{
+    display: flex;
+    align-items: center;
+    background-color: #6abe66;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border: 3px solid #449552;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    width: 100px;
+    padding: 10px 12px;
+    margin-right: 16px;
+    line-height: 1;
+}
+
+.twofa-modal .modal-footer button:hover{
+    color: #fff;
+    background: transparent;
+    transition: 0.3s;
+    border: 3px solid #6abe66;
+}
+
+.twofa-modal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.twofa-modal .modal-body img{
+    width: 250px;
+    margin: 5px auto;
+}
+.twofa-modal .modal-body input {
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #6abe66;
+    padding: 3px 10px;
+    border-radius: 8px;
+    width: 350px;
+    margin: 5px auto;
+}
+
+.twofa-modal .modal-body input:focus {
+    outline: #6abe66;
+    border: 3px solid #6abe66;
+}
+@media (max-width: 1050px) {
+    .twofa-modal .modal-header h4 {
+        margin-left: 50px;
+    }
+    .twofa-modal .modal-footer {
+        padding-top: 0;
+    }
+    .twofa-modal .modal-header {
+        padding-bottom: 0;
+    }
+    .twofa-modal .modal-content {
+        width: auto;
+    }  
+    .twofa-modal .modal-body input {
+        width: auto;
+    }
+}

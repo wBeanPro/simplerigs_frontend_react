@@ -1,0 +1,202 @@
+.bitcoin-check-root-container {
+    background-color: linear-gradient(180deg,#7df2fd 1.68%,#fff 48.32%,#fed480);
+    min-height: 100vh;
+    background: url(../../assets/images/checkout-bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    font-family: 'rajdhani';
+    padding: 20px 40px;
+}
+.bitcoin-checkout-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.checkout-login-btn{
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    padding: 32px 12px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.checkout-login-btn button{
+    display: flex;
+    align-items: center;
+    background: #429763;
+    outline: none;
+    border: none;
+    border: 3px solid #429763;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    padding: 3px 32px;
+}
+.checkout-login-btn button span{
+    display: block;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
+.checkout-login-btn button:hover{
+    background-color: transparent;
+    color: #429763;
+    transition: .3s;
+}
+.bitcoin-check-inner{
+    width: 100%;
+    max-width: 800px;
+}
+.bitcoin-check-inner .checkout-heading{
+    color: #449552;
+    text-align: center;
+    font-weight: 700;
+    -webkit-text-stroke: 2.5px;
+    letter-spacing: 2px;
+}
+.bitcoin-check-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.bitcoin-left-warp{
+    flex-basis: 50%;
+}
+.bitcoin-right-warp{
+    flex-basis: 50%;
+}
+.need-help{
+    background: #d2eab5;
+    border-radius: 5px;
+    max-width: 230px;
+    margin-left: 16px;
+    padding: 16px;
+    margin-top: 16px;
+}
+.need-help h4{
+    color: #449552;
+    font-weight: 700;
+    line-height: 0.5;
+}
+.need-help span{
+    -webkit-text-stroke: 0.4px;
+    color: #7f7f7f;
+    font-weight: 700;
+}
+.bitcoin-left-warp .bitcoin-img img{
+    width: 100%;
+    max-width: 250px;
+}
+.bitcoin-right-warp h4{
+    color: #449552;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.bitcoin-address-details{
+    margin-bottom: 16px;
+}
+.bitcoin-address-details h5{
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+}
+.bitcoin-address-details span{
+    font-size: 17px;
+    line-height: 0.6;
+}
+.bitcoin-address-details a{
+    font-size: 22px;
+    line-height: 0.6;
+    text-decoration: none;
+    color: var(--bs-body-color);
+}
+.copy-address {
+    cursor: pointer;
+}
+.copy-address svg:hover {
+    transform: scale(1.2);
+}
+.bitcoin-address-details a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.bitcoin-address-details span svg{
+    margin-left: 12px;
+}
+.verification-btn button{
+    display: flex;
+    align-items: center;
+    background-color: #429763;
+    outline: none;
+    border: none;
+    border: 3px solid #429763;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    padding: 8px 28px;
+}
+.verification-btn button a{
+    color: white;
+    text-decoration: none;
+}
+.verification-btn button span{
+    display: block;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
+.verification-btn button:hover{
+    background-color: transparent;
+    transition: .3s;
+}
+.verification-btn button a:hover{
+    color:#429763;
+}
+
+@media (max-width:880px){
+    .bitcoin-check-root-container {
+        padding: 0px 20px;
+    }
+
+    .bitcoin-checkout-container{
+        margin-top: 0px;
+    }
+    .bitcoin-check-inner{
+        padding: 50px 12px;
+    }
+}
+@media (max-width:680px){
+.bitcoin-check-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.bitcoin-left-warp .bitcoin-img img{
+    width: 100%;
+    max-width: 180px;
+}
+.bitcoin-left-warp{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.bitcoin-right-warp{
+    flex-basis: 50%;
+    text-align: center;
+}
+.verification-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

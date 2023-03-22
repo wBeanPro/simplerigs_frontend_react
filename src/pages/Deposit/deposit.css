@@ -1,0 +1,265 @@
+.dashboard-calculator-container{
+    background-color: #cceec6;
+     border-radius: 10px;
+     padding: 16px 24px;
+     font-family: 'rajdhani';
+     display: flex;
+     justify-content: space-between;
+     margin-top: 32px;
+}
+.deposit-head{
+    font-weight: 700;
+    margin-top: 12px;
+}
+.dash-calc-wrap{
+    flex-basis: 35%;
+    /* padding-top: 8px; */
+}
+
+.deposit_description {
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+.deposit_description p{
+    margin-bottom: 0px !important;
+    font-weight: 700;
+}
+
+.form-wrap {
+    margin-top: 38px;
+}
+.dash-form-field {
+    margin-top: 32px;
+}
+
+.dash-form-field label{
+    color: #595a5b;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+.range-slider {
+    margin-top: 55px;
+    padding-left: 12px;
+}
+
+.MuiSlider-root {
+    color: #6abe66 !important;
+    height: 20px !important;
+}
+
+.MuiSlider-valueLabel {
+    width: 100px !important;
+    height: 40px !important;
+    background-color: white !important;
+    color: #595a5b !important;
+}
+.calc-cta {
+    flex-basis: 60%;
+}
+.dash-calc-wallet-wrap {
+    display: flex;
+}
+.dash-calc-wrap h2{
+    color: #3d9759;
+    -webkit-text-stroke: 1.5px;
+    font-size: 24px;
+    margin: 8px 0px 0px 0px;
+}
+.calc-wal-heading{
+    margin-bottom: 16px;
+}
+.calc-wal-heading h1{
+ -webkit-text-stroke: 1.5px;
+ font-size: 32px;
+ margin: 0;
+}
+.calc-wal-heading span{
+    color: #7a808e;
+    font-family: 'montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+.dash-calc-wallet-wrap h3{
+    color: #5c635c;
+    font-size: 24px;
+    -webkit-text-stroke: 1px;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+.calc-list-item{
+    display: flex;
+    align-items: center;
+}
+.calc-list-item .circle{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #5e5a5b;
+    margin-right: 12px;
+}
+.calc-list-item span{
+    color: #5e5a5b;
+    font-family: 'montserrat';
+    font-size: 18px;
+    font-weight: 600;
+}
+.calc-list h1{
+    -webkit-text-stroke: 1.5px;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+.calc-list{
+    margin: 16px 0px 0px 0px;
+}
+.dash-calc-wallet-wrap{
+     background-color: #b6e49f;
+    padding: 16px 24px;
+    border-radius: 5px;
+}
+.calc-truck-img{
+    align-self: flex-end;
+}
+.calc-truck-img img{
+    width: 100%;
+    max-width: 300px;
+}
+.green-tractor.img-resize{
+    max-width: 180px;
+}
+.dash-credit-btn a{
+    display: flex;
+    align-items: center;
+    background: #449552;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border: 3px solid #449552;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    padding: 10px 24px;
+    margin-right: 16px;
+    line-height: 1;
+    width: 260px;
+    text-decoration: none;
+}
+.dash-credit-btn a:hover{
+    color: #449552;
+    background: transparent;
+    transition: 0.3s;
+}
+.dash-credit-btn a span{
+    display: block;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
+.dash-credit-btn a img{
+    width: 32px;
+    margin-right: 8px;
+}
+.dash-calc-btn {
+    display: flex;
+    margin-top: 16px;
+}
+
+/* Media Queries Calcultor COntainer */
+@media (max-width:480px){
+    .dashboard-calculator-container {
+    padding: 16px !important;
+    margin-top: 32px;
+}
+.form-wrap {
+    margin-top: 24px;
+}
+.form-wrap .flex-mob{
+    display: flex;
+    gap: 20px;
+}
+.dash-calc-field input{
+    font-size: 20px;
+}
+.dash-form-field {
+    margin-top: 12px;
+}
+.dash-calc-wrap h2 {
+    -webkit-text-stroke: 1px;
+    margin: 0;
+    font-size: 20px;
+}
+.dash-form-field label {
+    margin-bottom: 8px;
+}
+.dash-calc-field input {
+    font-size: 20px;
+    padding: 16px;
+}
+.range-slider {
+    margin-top: 40px;
+    padding-left: 12px;
+}
+.calc-wal-heading span {
+    font-size: 12px;
+}
+.calc-wal-heading h1 {
+    -webkit-text-stroke: 1px;
+    font-size: 27px;
+    margin: 0;
+}
+}
+
+@media (max-width:1050px){
+    .dashboard-calculator-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    flex-direction: column;
+    margin-top: 32px;
+}
+}
+@media (max-width:650px){
+.dash-calc-wallet-wrap{
+    position: relative;
+}
+.calc-truck-img img {
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    width: 135px;
+    bottom: 9px;
+    right: 4px;
+}
+.dash-calc-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.dash-credit-btn a{
+    /* width: 100%; */
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 240px;
+    margin-right: 0px;
+    font-size: 20px;
+}
+}
+
+@media (max-width:380px){
+.dash-form-field label {
+    font-size: 16px;
+}
+.dash-calc-field input {
+    font-size: 16px;
+    padding: 14px;
+}
+.form-wrap .flex-mob {
+    gap: 12px;
+}
+}
