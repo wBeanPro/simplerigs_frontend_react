@@ -32,7 +32,7 @@ const Login = ({closeLoginModal}) => {
                     localStorage.setItem('logged_in', true);
                     navigate("/dashboard");
                     toast.success(response.data.message, {
-                        position: "top-right",
+                        position: "top-center",
                         autoClose: 2000,
                         closeOnClick: true,
                         hideProgressBar: true,

@@ -15,7 +15,7 @@ const WithdrawConfirmModal = ({ modalTile, availableBalance, closeWithdrawModal 
     const [withdrawAmount, setWithdrawAmount] = useState();
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
-    const user_id = localStorage.getItem('user_id');
+    const user_id = Number(localStorage.getItem('user_id'));
     const access_token = localStorage.getItem('access_token');
 
     const animation = useSpring({
@@ -96,7 +96,7 @@ const WithdrawConfirmModal = ({ modalTile, availableBalance, closeWithdrawModal 
         <>
             <div className="flex justify-end items-center z-50 top-0 w-full h-[100vh] md:h-full fixed bg-[#000] bg-opacity-[30%]" onClick={CloseToIcon} id='scroll'>
                 <animated.div style={animation} className="font-rajdhani">
-                    <div className='relative flex flex-col md:justify-between w-[100vw] lg:w-[27vw] h-screen lg:overflow-y-scroll pt-[38px] pb-[1vh] px-[12px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] md:px-[60px] bg-[#fff] lg:rounded-l-[20px] font-Rajdhani md:font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_45vh]' onClick={handleClickEvent}>
+                    <div className='relative flex flex-col md:justify-between w-[100vw] lg:w-[27vw] h-screen lg:overflow-y-scroll pt-[12px] pb-[1vh] px-[12px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] md:px-[60px] bg-[#fff] lg:rounded-l-[20px] font-Rajdhani md:font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_45vh]' onClick={handleClickEvent}>
 
                         <div className='lg:hidden flex justify-between items-center py-[8px] pl-[25px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                             <div className='flex items-center space-x-[18px]'>

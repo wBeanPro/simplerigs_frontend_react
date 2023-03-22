@@ -59,7 +59,7 @@ const Terms = () => {
             {loginStatus ?
                 <>
                     <div className="relative bg-no-repeat lg:h-[100vh] dashboard-root-container">
-                        <div className='flex lg:flex-row flex-col justify-between pt-[32px] px-[12px] pb-[0px] lg:pt-[36px] lg:pr-[38px] lg:pb-[30px] lg:pl-[50px]' >
+                        <div className='flex lg:flex-row flex-col justify-between pt-[12px] px-[12px] pb-[0px] lg:pt-[36px] lg:pr-[38px] lg:pb-[30px] lg:pl-[50px]' >
                             {!MobileSidebar &&
                                 <div className='lg:hidden flex justify-between items-center py-[8px] pl-[24px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                                     <div className='flex items-center space-x-[15px]'>

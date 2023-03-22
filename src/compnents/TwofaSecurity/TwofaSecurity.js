@@ -113,7 +113,7 @@ const TwofaSecurity = () => {
             <div className="flex justify-end items-center z-50 top-0 w-full h-full fixed bg-[#000] bg-opacity-[30%]" onClick={CloseToIcon} id='scroll'>
                 <animated.div style={animation} className="font-Rajdhani">
 
-                    <div className='relative flex flex-col md:justify-between w-screen lg:w-[27vw] h-[100vh] lg:overflow-y-scroll pt-[38px] pb-[1vh] px-[12px] md:px-[60px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] bg-[#fff] lg:rounded-l-[20px] font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_40vh]' onClick={handleSubDivClick}>
+                    <div className='relative flex flex-col md:justify-between w-screen lg:w-[27vw] h-[100vh] lg:overflow-y-scroll pt-[12px] pb-[1vh] px-[12px] md:px-[60px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] bg-[#fff] lg:rounded-l-[20px] font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_40vh]' onClick={handleSubDivClick}>
                         <div className='lg:hidden flex justify-between items-center py-[0.8vh] pl-[25px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                             <div className='flex items-center space-x-[18px]'>
                                 <div onClick={CloseToIcon} className='block w-[8px] h-[8px] border-b-[2px] border-r-[2px] border-[#292D32] rotate-[135deg]'></div>

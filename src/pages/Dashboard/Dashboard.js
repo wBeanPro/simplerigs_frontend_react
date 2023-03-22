@@ -494,12 +494,13 @@ const Dashboard = () => {
                                                                 )
                                                             })
                                                         }
-                                                        <div className='flex justify-center items-center bg-[#ffffff] shadow-[0px_0px_14px_rgba(0,0,0,0.1)] rounded-[10px] px-[15px] py-[15px]'>
+                                                        
+                                                    </div>
+                                                    <div className='flex justify-center mt-[3vh] items-center bg-[#ffffff] shadow-[0px_0px_14px_rgba(0,0,0,0.1)] rounded-[10px] px-[15px] py-[15px]'>
                                                             {pricechartData &&
                                                                 <Line options={options} data={pricechartData} className="h-[70vh] w-[18vw]"/>
                                                             }
                                                         </div>
-                                                    </div>
                                                 </>
                                                 :
                                                 <div className='flex flex-col items-center justify-center w-full h-[276.69px] font-montserrat'>
@@ -637,12 +638,12 @@ const Dashboard = () => {
             {planlistSliderShow &&
                 <div className="flex justify-end items-center z-[100] top-0 w-full h-full fixed bg-[#000] bg-opacity-[30%]" onClick={setPlanListSliderSetting} id='scroll'>
                     <animated.div style={sliderAnimation} className="font-rajdhani h-[100vh]">
-                        <div className='relative flex flex-col md:justify-between w-[100vw] h-[100vh] lg:w-[27vw] h-100 lg:overflow-y-scroll pt-[45px] pb-[1vh] px-[12px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] md:px-[60px] bg-[#fff] lg:rounded-l-[20px] font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_45vh]' onClick={handleClickEvent}>
+                        <div className='relative flex flex-col md:justify-between w-[100vw] h-[100vh] lg:w-[27vw] h-100 lg:overflow-y-scroll pt-[12px] pb-[1vh] px-[12px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] md:px-[60px] bg-[#fff] lg:rounded-l-[20px] font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_45vh]' onClick={handleClickEvent}>
 
                             <div className='lg:hidden flex justify-between items-center py-[8px] pl-[25px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                                 <div className='flex items-center space-x-[18px]'>
                                     <div onClick={setPlanListSliderSetting} className='block w-[12px] h-[12px] border-b-[2px] border-r-[2px] border-[#292D32] rotate-[135deg]'></div>
-                                    <p className='font-[500] text-[18px] font-Rajdhani mb-0'>My Assets</p>
+                                    <p onClick={setPlanListSliderSetting} className='font-[500] text-[18px] font-Rajdhani mb-0'>My Assets</p>
                                 </div>
 
                                 <div className='items-center justify-end hover:text-[#429763]'>
@@ -725,13 +726,13 @@ const Dashboard = () => {
                             <div className='px-[1.5vw] mt-[10px]'>
                                 <div className='bg-[#fff] bg-opacity-[30%] w-full rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)] py-[8px] px-[6px] lg:py-[1vh] lg:px-[0.8vw] text-[#595A5B] text-[1.5vh] lg:text-[0.6vw] font-[500] leading-[2vh] text-left space-y-[1vh] md:font-montserrat font-Rajdhani'>
                                     <div className='flex items-center'>
-                                        <p className='mr-[8px] text-[30px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[30px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Daily Withdrawal Limit: 2 BTC</p>
                                         <AiOutlineQuestionCircle className='text-[#1E9E39] lg:ml-[0px] ml-[10px] w-[20px] h-[18px] lg:w-[2vw] lg:h-[2vh]' />
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[30px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[30px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>If you have made deposits before the withdrawal, please make sure they are complete. </p>
                                     </div>
                                 </div>

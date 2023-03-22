@@ -60,7 +60,7 @@ const Company = () => {
             {loginStatus ?
                 <>
                     <div className="dashboard-root-container lg:h-[100vh]">
-                        <div className='flex lg:flex-row flex-col justify-between pt-[32px] px-[12px] pb-[0px] lg:pt-[36px] lg:pr-[38px] lg:pb-[30px] lg:pl-[50px]'>
+                        <div className='flex lg:flex-row flex-col justify-between pt-[12px] px-[12px] pb-[0px] lg:pt-[36px] lg:pr-[38px] lg:pb-[30px] lg:pl-[50px]'>
                             {!MobileSidebar &&
                                 <div className='lg:hidden flex justify-between items-center py-[8px] pl-[24px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                                     <div className='flex items-center space-x-[15px]'>
@@ -97,7 +97,7 @@ const Company = () => {
                                                 <p className='mb-[0] font-bold'>Who are we?</p>
                                                 <div>
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] mb-[0] pt-[8px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>The most simple Cloud Mining Company on the market. No need to have any special knowledge or any know-how, no need to choose between GPU or ASICs. Get Your first income within 3 simple actions. Just click on a calculator, select the desired hash power amount, make a deposit and start earning.</p>
                                                     </div>
                                                 </div>
@@ -105,27 +105,27 @@ const Company = () => {
                                                 <p className='mb-[0] font-bold'>How to Start?</p>
                                                 <div>
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] mb-[0] pt-[8px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>Go through a simple registration and payment procedure to join us.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>Use the calculator to know Your potential profit (all fees already deducted, what You see is what You'll get – no hidden costs or fees)</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>Make a refundable deposit using one of the offered options.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>You can increase Your total hash rate at any time, the more hash rate You got, the more BTC will be generated.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>You are not required to buy or install any additional equipment.</p>
                                                     </div>
                                                 </div>
@@ -133,22 +133,22 @@ const Company = () => {
                                                 <p className='mb-[0] font-bold'>Payouts and withdrawal</p>
                                                 <div>
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>You will be paid daily at the same time.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>All payouts are in BTC.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>Minimum withdrawal amount is 0.001 BTC (will be processed within 24 hours). Withdrawal fees are covered by the company.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>No hidden fees.</p>
                                                     </div>
                                                 </div>
@@ -156,7 +156,7 @@ const Company = () => {
                                                 <p className='mb-[0] font-bold'>Expenses and maintenance fees</p>
                                                 <div>
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>All fees already deducted and won't cost You any extra. The income stated on the calculator is NET.</p>
                                                     </div>
                                                 </div>
@@ -218,7 +218,7 @@ const Company = () => {
                                 <p className='mb-[0] font-bold'>Who are we?</p>
                                 <div>
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] mb-[0] pt-[8px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>The most simple Cloud Mining Company on the market. No need to have any special knowledge or any know-how, no need to choose between GPU or ASICs. Get Your first income within 3 simple actions. Just click on a calculator, select the desired hash power amount, make a deposit and start earning.</p>
                                     </div>
                                 </div>
@@ -226,27 +226,27 @@ const Company = () => {
                                 <p className='mb-[0] font-bold'>How to Start?</p>
                                 <div>
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] mb-[0] pt-[8px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Go through a simple registration and payment procedure to join us.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] mb-[0] pt-[8px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Use the calculator to know Your potential profit (all fees already deducted, what You see is what You'll get – no hidden costs or fees)</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Make a refundable deposit using one of the offered options.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>You can increase Your total hash rate at any time, the more hash rate You got, the more BTC will be generated.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>You are not required to buy or install any additional equipment.</p>
                                     </div>
                                 </div>
@@ -254,22 +254,22 @@ const Company = () => {
                                 <p className='mb-[0] font-bold'>Payouts and withdrawal</p>
                                 <div>
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>You will be paid daily at the same time.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>All payouts are in BTC.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Minimum withdrawal amount is 0.001 BTC (will be processed within 24 hours). Withdrawal fees are covered by the company.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>No hidden fees.</p>
                                     </div>
                                 </div>
@@ -277,13 +277,13 @@ const Company = () => {
                                 <p className='mb-[0] font-bold'>Expenses and maintenance fees</p>
                                 <div>
                                     <div className='flex'>
-                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>All fees already deducted and won't cost You any extra. The income stated on the calculator is NET.</p>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <p className='mr-[12px]'>&#x2022;</p>
+                                    <p className='mr-[12px] pt-[8px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                     <p className='mr-[12px]'>Procurement of equipment is calculated in the tens of millions.</p>
                                 </div><br />
 
@@ -352,27 +352,27 @@ const Company = () => {
 
                                                 <div>
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>We do care about the environment.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>We are using 100% renewable energy sources.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>Our data centers are located at Linde in the Northern Cape and Dreunberg in the Eastern Cape, both sun drenched regions boasting one of the best conditions for solar power in the world.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>We cooperate only with the largest suppliers.</p>
                                                     </div>
 
                                                     <div className='flex'>
-                                                        <p className='mr-[12px] mb-[0]'>&#x2022;</p>
+                                                        <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                                         <p className='mb-[0]'>Procurement of equipment is calculated in the tens of millions.</p>
                                                     </div>
                                                 </div>

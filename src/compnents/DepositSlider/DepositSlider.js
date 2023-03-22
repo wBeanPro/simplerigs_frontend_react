@@ -164,12 +164,12 @@ const DepositSlider = ({ depositType, closeDepositModal }) => {
                             <div className='px-[1.5vw] mt-[10px]'>
                                 <div className='bg-[#fff] bg-opacity-[30%] w-full rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)] py-[6px] px-[14px] lg:py-[1vh] lg:px-[0.8vw] text-[#595A5B] text-[1.8vh] lg:text-[0.6vw] font-[500] leading-[2vh] text-left space-y-[1vh] lg:font-montserrat font-Rajdhani'>
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[20px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[20px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Please make sure that only BTC deposit is made via this address and Your wallet address is correct . Otherwise, Your deposited funds will not be added to Your available balance - nor will be refunded.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[20px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[20px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>3 block confirmation are required to launch a new miner.</p>
                                     </div>
                                 </div>
@@ -252,22 +252,22 @@ const DepositSlider = ({ depositType, closeDepositModal }) => {
                             <div className='px-[1.5vw] mt-[10px]'>
                                 <div className='bg-[#fff] bg-opacity-[30%] w-full rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)] py-[6px] px-[14px] lg:py-[1vh] lg:px-[0.8vw] text-[#595A5B] text-[1.8vh] lg:text-[0.6vw] font-[500] leading-[2vh] text-left space-y-[1vh] lg:font-montserrat font-Rajdhani'>
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[20px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[20px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Please make sure that only BTC deposit is made via this address. Otherwise, Your deposited funds will not be added to Your available balance - nor will be refunded.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[20px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[20px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Please make sure that Your Simple Rigs address is correct. Otherwise, Your deposited funds will not be added to Your available balance - nor will be refunded.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[20px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[20px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>3 block confirmation are required to launch a new miner.</p>
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[20px] mb-[0]'>&#x2022;</p>
+                                        <p className='mr-[8px] text-[20px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Please make sure that You are using BTC network to transfer funds.</p>
                                     </div>
                                 </div>
