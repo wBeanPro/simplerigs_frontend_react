@@ -31,12 +31,12 @@ const Login = ({closeLoginModal}) => {
                 } else{
                     localStorage.setItem('logged_in', true);
                     navigate("/dashboard");
-                    toast.success(response.data.message, {
-                        position: "top-center",
-                        autoClose: 2000,
-                        closeOnClick: true,
-                        hideProgressBar: true,
-                    }); 
+                    // toast.success(response.data.message, {
+                    //     position: "top-center",
+                    //     autoClose: 2000,
+                    //     closeOnClick: true,
+                    //     hideProgressBar: true,
+                    // }); 
                 }
                 // localStorage.setItem('logged_in', true);
                 // navigate("/dashboard");
