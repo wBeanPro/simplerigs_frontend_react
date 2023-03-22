@@ -84,14 +84,14 @@ const Terms = () => {
                                     <Sidebar />
                                 </div>
                                 <div className="main-container">
-                                    <div className="flex flex-col justify-between dashboard-container">
+                                    <div className="flex flex-col justify-between dashboard-container lg:h-[93vh]">
 
                                         <div className="mt-[4vh] ml-[1.8vw]">
                                             <h1 className='text-[28px] lg:text-[1.2vw] font-[500] lg:font-[600] font-Rajdhani lg:font-montserrat mb-[0] text-[#000000]'>Terms of <span className='text-[#449552]'>Use</span></h1>
                                         </div>
 
-                                        <div className='h-full w-full lg:w-[68vw] mt-[2vh] relative bg-[#FFFFFF] bg-[length:100%_100%] bg-opacity-[60%] rounded-[20px] px-[20px] py-[20px] lg:pt-[4vh] lg:pl-[2vw] lg:pb-[4vh] lg:pr-[3vw] shadow-[0px_0px_44px_rgba(0,0,0,0.1)] leading-[25px] lg:leading-[3vh] font-Rajdhani lg:font-montserrat text-[22px] lg:text-[0.7vw] text-[#595A5B]'>
-                                            <div className='overflow-y-scroll h-[580px] lg:h-[710px]'>
+                                        <div className='lg:flex flex-col space-y-[1vh] h-full w-full lg:w-[68vw] mt-[2vh] relative bg-[#FFFFFF] bg-[length:100%_100%] bg-opacity-[60%] rounded-[20px] px-[20px] py-[20px] lg:pt-[4vh] lg:pl-[2vw] lg:pb-[4vh] lg:pr-[3vw] shadow-[0px_0px_44px_rgba(0,0,0,0.1)] leading-[25px] lg:leading-[3vh] font-Rajdhani lg:font-montserrat text-[22px] lg:text-[0.7vw] text-[#595A5B]'>
+                                            <div className='overflow-y-scroll h-[580px] lg:h-[740px]'>
                                                 <h6 className='font-bold'>TERMS OF USE</h6>
                                                 <br />
                                                 <h6 className='font-bold'>Introduction</h6>
