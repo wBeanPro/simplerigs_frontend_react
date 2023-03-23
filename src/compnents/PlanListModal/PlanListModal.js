@@ -42,7 +42,7 @@ const planListModal = () => {
     );
   return (
     <>
-        <div className="flex justify-center items-center z-50 top-0 w-full h-full fixed bg-[#000] bg-opacity-[52%]" id='scroll' onClick={closeModal} ref={modalRef}>
+        <div className="flex justify-center items-center z-50 top-0 w-full h-[100vh] md:h-full fixed bg-[#000] bg-opacity-[52%]" id='scroll' onClick={closeModal} ref={modalRef}>
             <animated.div style={animation} className="font-Rajdhani">
                 {
                     forgotPassword

@@ -110,7 +110,7 @@ const TwofaSecurity = () => {
 
     return (
         <>
-            <div className="flex justify-end items-center z-50 top-0 w-full h-full fixed bg-[#000] bg-opacity-[30%]" onClick={CloseToIcon} id='scroll'>
+            <div className="flex justify-end items-center z-50 top-0 w-full h-[100vh] md:h-full fixed bg-[#000] bg-opacity-[30%]" onClick={CloseToIcon} id='scroll'>
                 <animated.div style={animation} className="font-Rajdhani">
 
                     <div className='relative flex flex-col md:justify-between w-screen lg:w-[27vw] h-screen overflow-y-scroll pt-[12px] pb-[1vh] px-[12px] md:px-[60px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] bg-[#fff] lg:rounded-l-[20px] font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_40vh]' onClick={handleSubDivClick}>

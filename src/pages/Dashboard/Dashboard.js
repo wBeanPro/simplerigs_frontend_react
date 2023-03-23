@@ -308,7 +308,7 @@ const Dashboard = () => {
 
     return (
         <>
-            <div className="dashboard-root-container  lg:h-[100vh] lg:flex-row flex-col">
+            <div className="dashboard-root-container  w-screen lg:h-[100vh] lg:flex-row flex-col">
                 <div className={`${planlistSliderShow? "md:h-full h-[50vh]" : "h-full" } ${planlistModalShow? "md:h-full h-[85vh]" : "h-full" } flex lg:flex-row flex-col justify-between pt-[12px] px-[12px] pb-[0px] lg:pt-[36px] lg:pr-[38px] lg:pb-[30px] lg:pl-[50px]`} >
 
                     {!MobileSidebar &&
