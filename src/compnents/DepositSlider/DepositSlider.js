@@ -15,7 +15,7 @@ const DepositSlider = ({ depositType, closeDepositModal }) => {
     const [qrURL, setQRURL] = useState();
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
-    const user_id = localStorage.getItem('user_id');
+    const user_id = Number(localStorage.getItem('user_id'));
     const access_token = localStorage.getItem('access_token');
     const data = {"user_id": user_id, "accessToken": access_token}
     const animation = useSpring({
@@ -74,7 +74,7 @@ const DepositSlider = ({ depositType, closeDepositModal }) => {
                             <div className='lg:hidden flex justify-between items-center py-[8px] pl-[25px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                                 <div className='flex items-center space-x-[18px]'>
                                     <div onClick={CloseToIcon} className='block w-[8px] h-[8px] border-b-[2px] border-r-[2px] border-[#292D32] rotate-[135deg]'></div>
-                                    <p className='font-[500] text-[18px] font-Rajdhani mb-0'>Buy Plans</p>
+                                    <p onClick={CloseToIcon} className='font-[500] text-[18px] font-Rajdhani mb-0'>Buy Plans</p>
                                 </div>
 
                                 <div className='items-center justify-end hover:text-[#429763]'>
@@ -192,7 +192,7 @@ const DepositSlider = ({ depositType, closeDepositModal }) => {
                             <div className='lg:hidden flex justify-between items-center py-[8px] pl-[25px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                                 <div className='flex items-center space-x-[18px]'>
                                     <div onClick={CloseToIcon} className='block w-[8px] h-[8px] border-b-[2px] border-r-[2px] border-[#292D32] rotate-[135deg]'></div>
-                                    <p className='font-[500] text-[18px] font-Rajdhani mb-0'>Buy Plans</p>
+                                    <p onClick={CloseToIcon} className='font-[500] text-[18px] font-Rajdhani mb-0'>Buy Plans</p>
                                 </div>
 
                                 <div className='items-center justify-end hover:text-[#429763]'>

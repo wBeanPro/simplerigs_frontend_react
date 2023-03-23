@@ -21,7 +21,7 @@ const Terms = () => {
     const logoutModalStatus = useSelector(state => getLogoutModal(state));
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
-    const user_id = localStorage.getItem('user_id');
+    const user_id = Number(localStorage.getItem('user_id'));
     const access_token = localStorage.getItem('access_token');
     const data = { "user_id": user_id, "accessToken": access_token };
 

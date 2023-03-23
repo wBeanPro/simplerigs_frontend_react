@@ -37,7 +37,7 @@ const Deposit = () => {
     const [lastName, setLastName] = useState();
     const [depositModalShow, setDepositModalShow] = useState(false);
     const [depositType, setDepositType] = useState(1);
-    const user_id = localStorage.getItem('user_id');
+    const user_id = Number(localStorage.getItem('user_id'));
     const access_token = localStorage.getItem('access_token');
     const loginStatus = localStorage.getItem('logged_in');
     const dispatch = useDispatch();
