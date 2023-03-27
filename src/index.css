@@ -5,7 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: rajdhani;
-  src: url(../src/assets/fonts/rajdhani.woff2);
+  src: local('Pacifico Regular'), url(../src/assets/fonts/rajdhani.woff2);
+  font-display: swap;
 }
 *{
   padding: 0;

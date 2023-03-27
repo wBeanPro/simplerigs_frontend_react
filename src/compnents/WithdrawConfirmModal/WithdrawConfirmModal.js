@@ -167,7 +167,7 @@ const WithdrawConfirmModal = ({ modalTile, availableBalance, closeWithdrawModal 
 
                         <div className='px-[1.5vw] mt-[10px]'>
                             <div className='flex justify-between items-center w-full py-[1vh] lg:py-[1.5vh] pr-[20px] lg:pr-[0.8vw] pl-[20px] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)] bg-[#fff] text-[#7F7F7F]'>
-                                <input onChange={e => setWithdrawAmount(e.target.value)} value={withdrawAmount} placeholder='Min. Withdrawal Amount 0.001' className='basis-[70%] border-none focus:outline-none font-[500] text-[2vh] lg:text-[0.8vw] font-Rajdhani' required />
+                                <input onChange={e => setWithdrawAmount(e.target.value)} value={withdrawAmount} placeholder='Min. Withdrawal Amount 0.0005' className='basis-[70%] border-none focus:outline-none font-[500] text-[2vh] lg:text-[0.8vw] font-Rajdhani' required />
                                 <div className='flex basis-[25%] lg:basis-[18%] justify-between text-[2vh] lg:text-[0.7vw]'>
                                     <p className='mb-[0]'>BTC</p>
                                     <div className='lg:hidden block mt-[0.3vh] h-[18px] border-l-[2px] border-[#7F7F7F]'></div>

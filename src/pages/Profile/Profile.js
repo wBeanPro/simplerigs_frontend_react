@@ -16,7 +16,7 @@ import Logout from '../../compnents/Logout/Logout';
 import Verified from '../../assets/images/verified_avatar.png';
 import MobilePagesBack from '../../assets/images/mobile_pages_back.png';
 import Unverified from '../../assets/images/unverified_avatar.png';
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
 import './profile.css';
 
 import { getLogoutModal, getTwoFAStatus } from '../../store/reducer';

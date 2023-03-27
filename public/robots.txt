@@ -1,3 +1,29 @@
-# https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Disallow: /*wp-admin/
+Allow: /*wp-admin/admin-ajax.php
+Disallow: /*?gclid=*
+Disallow: /*?utm_source=*
+Disallow: /*?yclid=*
+Disallow: /*_openstat*
+
+User-agent: Bingbot
+Disallow: /*wp-admin/
+Allow: /*wp-admin/admin-ajax.php
+Disallow: /*?gclid=*
+Disallow: /*?utm_source=*
+Disallow: /*?yclid=*
+Disallow: /*_openstat*
+
 User-agent: *
-Disallow:
+Disallow: /*wp-admin/
+Allow: /*wp-admin/admin-ajax.php
+Disallow: /*?gclid=*
+Disallow: /*?utm_source=*
+Disallow: /*?yclid=*
+Disallow: /*_openstat*
+
+User-agent: Googlebot-Image
+Allow: *.jpeg$
+Allow: *.jpg$
+Allow: *.png$
+Allow: *.gif$

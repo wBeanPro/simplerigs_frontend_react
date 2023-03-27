@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 // import LoginModal from '../../compnents/LoginModal/LoginModal';
 import CreditCheckoutImg from '../../assets/images/creditcheck.png'
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
 import './creditcardcheck.css'
 import { useNavigate } from 'react-router-dom';
 const CreditcardCheck = () => {

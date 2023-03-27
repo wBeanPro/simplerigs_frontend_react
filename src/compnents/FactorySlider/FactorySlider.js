@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import GreenTractor from '../../assets/images/green-tractor.png'
-import YellowTractor from '../../assets/images/yellow-tractor1.png'
-import YellowTractor2 from '../../assets/images/yellow-tractor2.png'
-import RedTractor from '../../assets/images/red-tractor1.png'
-import RedTractor2 from '../../assets/images/red-tractor2.png'
+import GreenTractor from '../../assets/images/green-tractor.webp'
+import YellowTractor from '../../assets/images/yellow-tractor1.webp'
+import YellowTractor2 from '../../assets/images/yellow-tractor2.webp'
+import RedTractor from '../../assets/images/red-tractor1.webp'
+import RedTractor2 from '../../assets/images/red-tractor2.webp'
 
 const StarterFactory = () => {
     return (
@@ -15,12 +15,12 @@ const StarterFactory = () => {
                         <h2 className='text-[#449552] md:text-[24px] font-[700] font-Rajdhani'>Choose your Desired Tractor</h2>
                         <div className='flex md:flex-col  gap-4'>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">Investment in $</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$250" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for="factory_price">Investment in $</label>
+                                <input type="text" id="factory_price" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$250" readOnly/>
                             </div>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">POWER</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="4000 GH/s" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for="factory_ability">POWER</label>
+                                <input type="text" id="factory_ability" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="4000 GH/s" readOnly/>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const StarterFactory = () => {
                                 </div> 
                             </div>
                             <div className="absolute right-[16px] bottom-[16px]">
-                                <img alt="" className="w-[128px] h-[90px] lg:w-[15vw] lg:h-[18vh] md:w-[150px] md:h-[130px]" src={GreenTractor}  />
+                                <img alt="" className="w-[128px]  lg:w-[15vw]  md:w-[150px] " width='265' height='186' src={GreenTractor}  />
                             </div>
                         </div>
                     </div>
@@ -63,12 +63,12 @@ const AdvanceFactory = () => {
                         <h2 className='text-[#449552] md:text-[24px] font-[700] font-Rajdhani'>Choose your Desired Tractor</h2>
                         <div className='flex md:flex-col  gap-4'>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">Investment in $</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$1000" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for="factory_price0">Investment in $</label>
+                                <input type="text" id='factory_price0' className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$1000" readOnly/>
                             </div>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">POWER</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="16000 GH/s" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for='factory_ability0'>POWER</label>
+                                <input type="text" id="factory_ability0" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="16000 GH/s" readOnly/>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ const AdvanceFactory = () => {
                                 </div> 
                             </div>
                             <div className="absolute right-[16px] bottom-[16px]">
-                                <img alt="" className="w-[160px] h-[95px] lg:w-[15vw] lg:h-[18vh] md:w-[170px] md:h-[130px]" src={YellowTractor}  />
+                                <img alt="" className="w-[160px]  lg:w-[15vw]  md:w-[170px] " width='336' height='157'  src={YellowTractor}  />
                             </div>
                         </div>
                     </div>
@@ -111,12 +111,12 @@ const PremiumFactory = () => {
                         <h2 className='text-[#449552] md:text-[24px] font-[700] font-Rajdhani'>Choose your Desired Tractor</h2>
                         <div className='flex md:flex-col gap-4'>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">Investment in $</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$5000" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for='factory_price1'>Investment in $</label>
+                                <input type="text" id="factory_price1" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$5000" readOnly/>
                             </div>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">POWER</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="80000 GH/s" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for="factory_ability1">POWER</label>
+                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" id="factory_ability1" value="80000 GH/s" readOnly/>
                             </div>
                         </div>
                     </div>
@@ -159,12 +159,12 @@ const ProfessionalFactory = () => {
                         <h2 className='text-[#449552] md:text-[24px] font-[700] font-Rajdhani'>Choose your Desired Tractor</h2>
                         <div className='flex md:flex-col  gap-4'>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">Investment in $</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$10000" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for='factory_price2'>Investment in $</label>
+                                <input type="text" id="factory_price2" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$10000" readOnly/>
                             </div>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">POWER</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="160000 GH/s" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for="factory_ability2">POWER</label>
+                                <input type="text" id="factory_ability2" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="160000 GH/s" readOnly/>
                             </div>
                         </div>
                     </div>
@@ -207,12 +207,12 @@ const BossFactory = () => {
                         <h2 className='text-[#449552] md:text-[24px] font-[700] font-Rajdhani'>Choose your Desired Tractor</h2>
                         <div className='flex md:flex-col  gap-4'>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">Investment in $</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$50000" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for="factory_price3">Investment in $</label>
+                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="$50000" readOnly id="factory_price3" />
                             </div>
                             <div className="mt-[1.8vh]">
-                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="">POWER</label>
-                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="800000 GH/s" readOnly/>
+                                <label className='text-[#595A5B] md:text-[24px] font-[700] mb-[5px]' htmlFor="" for="factory_ability3">POWER</label>
+                                <input type="text" className="bg-[#fff] border-[0px] font-montserrat md:text-[18px] py-[14px] px-[11px] md:py-[1.7vh] md:px-[1.4vw] opacity-70 rounded-[5px] w-full focus:outline-none" value="800000 GH/s" readOnly id="factory_ability3" />
                             </div>
                         </div>
                     </div>

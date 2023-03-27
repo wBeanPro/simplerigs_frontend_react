@@ -21,7 +21,7 @@ import WithdrawConfirmModal from '../../compnents/WithdrawConfirmModal/WithdrawC
 import './dashboard.css';
 import Logout from '../../compnents/Logout/Logout';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
 import NoAssets from '../../assets/images/no_assets.png'
 import RightArrow from '../../assets/images/right.png'
 import MobilePagesBack from '../../assets/images/mobile_pages_back.png';
@@ -122,6 +122,7 @@ const Dashboard = () => {
     }
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.body.style.zoom = "100%";
         const data = {"user_id": user_id, "accessToken": access_token}
         axios.post(process.env.REACT_APP_API_HOST + 'api/getWithdrawBalance', data )
             .then((response) => {

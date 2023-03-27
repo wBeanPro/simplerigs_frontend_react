@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring'
 import { Link } from 'react-router-dom';
 import Bitcoin from '../../assets/images/deposit_slider_bitoin.png'
 import Copy from '../../assets/images/copy.png';
-import Master from '../../assets/images/mastercard.png'
+import Master from '../../assets/images/mastercard.webp'
 import Visa from '../../assets/images/deposit_visa.png'
 import axios from 'axios'
 import { BiUserCircle } from 'react-icons/bi';

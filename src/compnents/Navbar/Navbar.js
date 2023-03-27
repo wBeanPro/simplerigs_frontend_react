@@ -48,18 +48,18 @@ const Navbar = () => {
                 <div className="mr-auto">
                     <p className="mb-[0] text-[30px] lg:text-[3vw] font-[700]">SIMPLE&nbsp;<span className='text-[#449552]'>RIGS</span>&nbsp;</p>
                     <div className='sm:text-left text-center'>
-                        <p className='text-[15px] sm:text-[23px] font-Rajdhani mb-[0]'>THE CLOUD MINING COMPANY</p>
+                        <p className='text-[15px] sm:text-[23px] font-Rajdhani mb-[0]'>THE <a href='https://simplerigs.com'>CLOUD MINING</a> COMPANY</p>
                     </div>
                 </div>
 
                 {/* Navigation bar */}
                 <div className="flex justify-end sm:justify-between items-center sm:w-[53%]">
-                    <div className='hidden sm:flex navbar_active space-x-[2vw] text-[1.2vw]'>
+                    <nav className='hidden sm:flex navbar_active space-x-[2vw] text-[1.2vw]'>
                         <NavLink to='/' >HOME</NavLink>
                         <NavLink to='/faqs' >FAQ</NavLink>
                         <NavLink to='/terms' >TERMS OF USE</NavLink>
                         <NavLink to='/company'>ABOUT US</NavLink>
-                    </div>
+                    </nav>
                             {/* Login Button */}
                     <div className="items-center">
                         <div className="text-[#fff]">

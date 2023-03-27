@@ -9,17 +9,17 @@ import DepositSlider from '../../compnents/DepositSlider/DepositSlider';
 import Logout from '../../compnents/Logout/Logout';
 import Sidebar from '../../compnents/Sidebar/Sidebar';
 import MobSidebar from '../../compnents/MobSidebar/MobSidebar'
-import GreenTractor from '../../assets/images/green-tractor.png'
-import YellowTractor from '../../assets/images/yellow-tractor1.png'
-import YellowTractor2 from '../../assets/images/yellow-tractor2.png'
-import RedTractor from '../../assets/images/red-tractor1.png'
-import RedTractor2 from '../../assets/images/red-tractor2.png'
+import GreenTractor from '../../assets/images/green-tractor.webp'
+import YellowTractor from '../../assets/images/yellow-tractor1.webp'
+import YellowTractor2 from '../../assets/images/yellow-tractor2.webp'
+import RedTractor from '../../assets/images/red-tractor1.webp'
+import RedTractor2 from '../../assets/images/red-tractor2.webp'
 import CreditIcon from '../../assets/images/card.png'
 import BitcoinIcon2 from '../../assets/images/bitcoin-icon-2.png'
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
-import Master from '../../assets/images/mastercard.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
+import Master from '../../assets/images/mastercard.webp'
 import Visa from '../../assets/images/deposit_visa.png'
-import Bitcoin from '../../assets/images/bitcoin2.png'
+import Bitcoin from '../../assets/images/bitcoin2.webp'
 import MobilePagesBack from '../../assets/images/mobile_pages_back.png';
 
 import './deposit.css'
@@ -209,8 +209,8 @@ const Deposit = () => {
                                                     </div>
                                                     <div className="lg:relative absolute right-[15px] bottom-[20px] lg:right-0 lg:bottom-0 self-end">
                                                         <div>
-                                                            <img alt="" className="w-[128px] h-[90px] lg:w-[8vw] lg:h-[11vh]" src={GreenTractor} style={{ display: showTractor === 1 ? "block" : "none" }} />
-                                                            <img alt="" className="w-[160px] h-[95px] lg:w-[12vw] lg:h-[12vh]" src={YellowTractor} style={{ display: showTractor === 2 ? "block" : "none" }} />
+                                                            <img alt="" className="w-[128px] h-[90px] lg:w-[8vw] lg:h-[11vh]" width='265' height='186' src={GreenTractor} style={{ display: showTractor === 1 ? "block" : "none" }} />
+                                                            <img alt="" className="w-[160px]  lg:w-[12vw] " width='336' height='157' src={YellowTractor} style={{ display: showTractor === 2 ? "block" : "none" }} />
                                                             <img alt="" className="w-[193px] h-[90px] lg:w-[11vw] lg:h-[12vh]" src={RedTractor} style={{ display: showTractor === 3 ? "block" : "none" }} />
                                                             <img alt="" className="w-[160px] h-[82px] lg:w-[10vw] lg:h-[12vh]" src={YellowTractor2} style={{ display: showTractor === 4 ? "block" : "none" }} />
                                                             <img alt="" className="w-[151px] h-[71px] lg:w-[10vw] lg:h-[10vh]" src={RedTractor2} style={{ display: showTractor === 5 ? "block" : "none" }} />

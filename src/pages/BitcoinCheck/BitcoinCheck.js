@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import LoginModal from '../../compnents/LoginModal/LoginModal';
 import BitcoinCheckoutImg from '../../assets/images/bitcoincheckout.png'
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
 import './bitcoincheck.css'
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';

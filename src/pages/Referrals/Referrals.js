@@ -8,7 +8,7 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import { getLogoutModal } from '../../store/reducer';
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
 import WithdrawScrollIcon from '../../assets/images/withdraw_scroll.png'
 import MobilePagesBack from '../../assets/images/mobile_pages_back.png';
 import Copy from '../../assets/images/copy.png';

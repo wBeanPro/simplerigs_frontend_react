@@ -5,7 +5,7 @@ import './withdraw.css'
 import Logout from '../../compnents/Logout/Logout';
 import WithdrawConfirmModal from '../../compnents/WithdrawConfirmModal/WithdrawConfirmModal';
 import { Link, useNavigate } from 'react-router-dom';
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
 import WithdrawScrollIcon from '../../assets/images/withdraw_scroll.png'
 import RightArrow from '../../assets/images/right.png'
 import NoAssets from '../../assets/images/no_assets.png'

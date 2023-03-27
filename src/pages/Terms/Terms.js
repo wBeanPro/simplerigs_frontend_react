@@ -11,7 +11,7 @@ import { BiUserCircle } from 'react-icons/bi';
 import { AiOutlineMenu } from "react-icons/ai";
 import { useSelector } from 'react-redux'
 import { getLogoutModal } from '../../store/reducer';
-import CheckoutTruck from '../../assets/images/checkout-truck.png'
+import CheckoutTruck from '../../assets/images/checkout-truck.webp'
 import MobilePagesBack from '../../assets/images/mobile_pages_back.png';
 
 const Terms = () => {
@@ -649,16 +649,25 @@ const Terms = () => {
                                 <div className='lg:hidden flex justify-between items-center py-[8px] pl-[24px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                                     <div className='flex items-center space-x-[15px]'>
                                     <div onClick={CloseToIcon} className='block w-[12px] h-[12px] border-b-[2px] border-r-[2px] border-[#292D32] rotate-[135deg]'></div>
-                                        <p className='font-[500] text-[18px] font-Rajdhani mb-0'>Terms of use</p>
+                                        <p onClick={CloseToIcon} className='font-[500] text-[18px] font-Rajdhani mb-0'>Terms of use</p>
                                     </div>
 
                                     <div className='items-center justify-end hover:text-[#429763]'>
+                                        { loginStatus ?
                                         <div className="bg-[#429763] rounded-[5px] font-Rajdhani text-[#fff] font-[500] font-montserrat border-[2px] border-[#429763] hover:bg-opacity-70 transition duration-300">
                                             <Link to='/profile' className='profile_icon no-underline flex items-center py-[1vh] px-[1vw] text-[18px] font-[500] space-x-[10px]'>
                                                 <p className='mb-0 lg:font-montserrat font-Rajdhani'>{firstName} {lastName}</p>
                                                 <BiUserCircle className='w-[20px] h-[20px]' />
                                             </Link>
                                         </div>
+                                        :
+                                        <div className="bg-[#429763] invisible rounded-[5px] font-Rajdhani text-[#fff] font-[500] font-montserrat border-[2px] border-[#429763] hover:bg-opacity-70 transition duration-300">
+                                            <Link to='/profile' className='profile_icon no-underline flex items-center py-[1vh] px-[1vw] text-[18px] font-[500] space-x-[10px]'>
+                                                <p className='mb-0 lg:font-montserrat font-Rajdhani'>{firstName} {lastName}</p>
+                                                <BiUserCircle className='w-[20px] h-[20px]' />
+                                            </Link>
+                                        </div>
+                                        }
                                     </div>
                                 </div>
                             }

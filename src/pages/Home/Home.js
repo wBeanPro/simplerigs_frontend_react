@@ -14,36 +14,36 @@ import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 import './home.css'
 
-import CryptoDaily from '../../assets/images/cryptodaily.png'
-import CryptoPhotato from '../../assets/images/cryptophotato.png'
+import CryptoDaily from '../../assets/images/cryptodaily.webp'
+import CryptoPhotato from '../../assets/images/cryptophotato.webp'
 import Yahoo from '../../assets/images/yahoo.png'
 import BitcoinCom from '../../assets/images/bitcoin.com.png'
 
-import HomeMobile from '../../assets/images/home_back_phone.png'
+import HomeMobile from '../../assets/images/home_back_phone.webp'
 import HomeScreenTractor from '../../assets/images/home_screen_tractor.png'
-import MobileHomeBack from '../../assets/images/mobile_home_back.png'
+import MobileHomeBack from '../../assets/images/mobile_home_back.webp'
 import Check from '../../assets/images/check.png'
-import AboutUSMobile from '../../assets/images/checkout-truck.png'
+import AboutUSMobile from '../../assets/images/checkout-truck.webp'
 
 import HomeScreenCoins from '../../assets/images/home_screen_coins.png'
-import Master from '../../assets/images/mastercard.png'
+import Master from '../../assets/images/mastercard.webp'
 import Mining from '../../assets/images/mining.png'
 import InstructionTractor from '../../assets/images/instruction_tractor.png'
-import InstructionCoin from '../../assets/images/instruction_coin.png'
+import InstructionCoin from '../../assets/images/instruction_coin.webp'
 import Visa from '../../assets/images/visa.png'
-import Bitcoin from '../../assets/images/bitcoin2.png'
-import CoinIcon from '../../assets/images/coin-icon.png'
-import Leave from '../../assets/images/leave.png'
-import GreenTractor from '../../assets/images/green-tractor.png'
-import YellowTractor from '../../assets/images/yellow-tractor1.png'
-import YellowTractor2 from '../../assets/images/yellow-tractor2.png'
-import RedTractor from '../../assets/images/red-tractor1.png'
-import RedTractor2 from '../../assets/images/red-tractor2.png'
+import Bitcoin from '../../assets/images/bitcoin2.webp'
+import CoinIcon from '../../assets/images/coin-icon.webp'
+import Leave from '../../assets/images/leave.webp'
+import GreenTractor from '../../assets/images/green-tractor.webp'
+import YellowTractor from '../../assets/images/yellow-tractor1.webp'
+import YellowTractor2 from '../../assets/images/yellow-tractor2.webp'
+import RedTractor from '../../assets/images/red-tractor1.webp'
+import RedTractor2 from '../../assets/images/red-tractor2.webp'
 import CreditIcon from '../../assets/images/card.png'
 import BitcoinIcon2 from '../../assets/images/bitcoin-icon-2.png'
-import AboutTruck from "../../assets/images/about-truck.png"
-import GooglePlay from '../../assets/images/footer_googlePlay.png'
-import AppStore from '../../assets/images/footer_appStore.png'
+import AboutTruck from "../../assets/images/about-truck.webp"
+import GooglePlay from '../../assets/images/footer_googlePlay.webp'
+import AppStore from '../../assets/images/footer_appStore.webp'
 
 import { useDispatch } from 'react-redux'
 import { setLogInModalShow, setSliderValueFor, setLoginModalStatus } from '../../store/action';
@@ -139,19 +139,21 @@ const Home = () => {
             <Navbar />
             <div className="flex justify-between mx-[1.5vw] mt-[1vh]">
                 <div className="hidden sm:block bg-[length:100%_100%] relative md:w-[65vw] md:h-[380px] lg:w-[48vw] lg:h-[591px] bg-[url('../src/assets/images/home_tractor_back.png')]">
-                    <img src={HomeMobile} alt="home_mobile" className='absolute bottom-0 right-0 md:w-[10vw] md:h-[18vh] lg:w-[10vw] lg:h-[40vh] mr-[-5px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]' />
+                    <img src={HomeMobile} alt="cloud mining" className='absolute bottom-0 right-0 md:w-[10vw]  lg:w-[10vw]  mr-[-5px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]' />
                 </div>
 
                 <div className='sm:hidden flex relative justify-center items-center w-full'>
-                    <img src={MobileHomeBack} alt="mobile home back" className='w-[90%] drop-shadow-[0px_0px_44px_rgba(0,0,0,0.25)]' />
+                    <img src={MobileHomeBack} width='540' height='387' alt="crypto cloud mining" className='w-[90%] drop-shadow-[0px_0px_44px_rgba(0,0,0,0.25)]' />
                     <p className='mb-0 leading-[22px] absolute text-center font-Rajdhani font-[600] mt-[-55px]'>
-                    We offer the easiest cloud mining<br /> process on cutting edge<br /> technology equipment
+                    We offer the easiest <a href='https://simplerigs.com'>cloud mining</a><br /> process on cutting edge<br /> technology equipment
                     </p>
                 </div>
                 <div className="hidden sm:block pr-[5vw] pl-[1vw] w-[45%] font-montserrat">
                     <h2 className="text-[1.5vw] font-[700]"><span className='text-[#449552]'>Easy</span> way to start cryptomining</h2>
                     <h2 className="text-[1.5vw] font-[700]"> Your Key to <span className='text-[#449552]'>success</span></h2>
-                    <p className='text-[0.8vw] mt-[0.5vh]'>Bitcoin and several other cryptocurrencies mining - the competitive process that verifies and adds new transactions to the blockchain for a cryptocurrency that uses the proof-of-work (PoW) method. The miner that wins the competition is rewarded with some amount of the currency and/or transaction fees. Regular mining requires certain knowledge, know-how and large starting investments. Moreover, all these software and hardware settings are not that easy. That's why we've decided to make it <span className='text-[#449552]'>simple</span></p>
+                    <p className='text-[0.8vw] mt-[0.5vh]'>Bitcoin and several other cryptocurrencies mining - the competitive process that verifies and adds new transactions to the blockchain for a cryptocurrency that uses the proof-of-work (PoW) method. The miner that wins the competition is rewarded with some amount of the currency and/or transaction fees. Regular mining requires certain knowledge, know-how and large starting investments. Moreover, all these software and hardware settings are not that easy. That's why we've decided to make it simple with crypto cloud mining, a trusted cloud mining site that provides advanced <a href='https://simplerigs.com'>cloud mining</a> services. Our cloud mining provider offers real, safe, and trustworthy online solutions to simplify the mining process.</p>
+
+                    <p className='text-[0.8vw] mt-[0.5vh]'>Overall, if you're looking for a legitimate and secure cloud mining provider, our cryptocurrency cloud mining services are a great choice. With our cloud-based crypto mining platform, users can mine cryptocurrencies without having to worry about the hassle and expense of managing hardware, making it a convenient and accessible option for anyone looking to get started with cryptocurrency mining.</p>
 
                     <div className='mt-[8vh]'>
                         <button type='button' className='flex items-center border-[#429763] hover:bg-opacity-70 border-[2px] transition duration-300 px-[2vw] py-[0.8vh] text-[1vw] bg-[#449552] text-[#fff] rounded-[10px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]' onClick={openModal}>Sign Up<span>
@@ -163,10 +165,10 @@ const Home = () => {
 
             {/* Feature Section */}
             <div className="bg-[url('../src/assets/images/feature_mobile_back.png')] sm:bg-[url('../src/assets/images/homepage_back.png')] md:bg-[length:138%_100%] lg:bg-[length:100%_100%] bg-cover h-[30vh] md:h-[30vh] sm:h-[45vh] flex items-center relative justify-evenly mt-[-15px] sm:mt-[3vh]">
-                <img src={BitcoinCom} alt="market" className='hidden sm:block w-[12%]'/>
-                <img src={Yahoo} alt="market" className='hidden sm:block w-[10%]' />
-                <img src={CryptoPhotato} alt="market" className='hidden sm:block w-[12%]' />
-                <img src={CryptoDaily} alt="market" className='hidden sm:block w-[12%]' />
+                <img src={BitcoinCom} width='312' height='44' alt="market" className='hidden sm:block w-[12%]'/>
+                <img src={Yahoo} width='171' height='63' alt="market" className='hidden sm:block w-[10%]' />
+                <img src={CryptoPhotato} width='232' height='90' alt="market" className='hidden sm:block w-[12%]' />
+                <img src={CryptoDaily} alt="market" width='292' height='68' className='hidden sm:block w-[12%]' />
                 <img src={HomeScreenTractor} alt="market" className='hidden sm:block absolute md:top-[-4vh] md:right-[5vw] lg:top-[-5vh] lg:right-[4vw]' />
                 <img src={HomeScreenCoins} alt="market" className='hidden sm:block absolute top-[-1.7vh] md:right-[1.8vw] lg:right-[2.2vw]' />
             </div>
@@ -182,25 +184,25 @@ const Home = () => {
                     <h1 className='text-[20px] md:text-[2vw] mt-[35px] md:mt-[1.8vh] font-[600]'>EASY 1-2-3 STEP INSTRUCTION</h1>
                     <div className='flex flex-col md:flex-row items-center justify-between mt-[3vh] px-[3vw] pb-[3vh]'>
                         <div className='w-full md:w-[30%] lg:w-[26%] flex flex-col items-center justify-between'>
-                            <img src={Mining} alt="mining" />
+                            <img src={Mining} width='138' height='142' alt="mining" />
                             <p className='mt-[2vh] font-[600] font-Rajdhani text-[24px] md:text-[15px] lg:text-[0.75vw] mb-[0]'>YOU’RE JUST 30 SEC AWAY</p>
                             <p className='font-[700] font-Rajdhani text-[33px] md:text-[20px] lg:text-[1vw]'>START <span className='text-[#429763]'>MINING </span>NOW</p>
                             <p className='mt-[1vh] text-[12px] w-[75%]'>Just fill out an easy registration form by entering Your data, such as an email, full name and Your phone number. Make sure that Your account is verified and login to finish further steps on Your way to passive income. </p>
                         </div>
                         <div className='w-full md:w-[30%] lg:w-[26%] flex flex-col items-center justify-between'>
-                            <img src={InstructionTractor} alt="mining" />
-                            <h3 className='mt-[2vh] font-[600] font-Rajdhani text-[33px] md:text-[20px] lg:text-[0.75vw]'>SELECT THE MOST</h3>
+                            <img src={InstructionTractor} alt="mining" width='156' height='129' />
+                            <span className='mt-[2vh] font-[600] font-Rajdhani text-[33px] md:text-[20px] lg:text-[0.75vw]'>SELECT THE MOST</span>
                             <h2 className='font-[700] font-Rajdhani text-[33px] md:text-[20px] lg:text-[1vw]'><span className='text-[#429763]'>PROFITABLE</span> TRACTOR</h2>
                             <p className='mt-[1vh] text-[12px] w-[75%]'>Check out available packages or make Your own! Use an easy calculator to check Your possible daily income. The income stated is accurate and guaranteed, might only vary for a few Satoshi due to crypto nature.</p>
                         </div>
                         <div className='w-full md:w-[30%] lg:w-[26%] flex flex-col items-center justify-between'>
-                            <img src={InstructionCoin} alt="mining" />
+                            <img src={InstructionCoin} alt="mining" width='144' height='96' />
                             <h3 className='mt-[2vh] font-[600] font-Rajdhani text-[24px] md:text-[20px] lg:text-[0.75vw]'>STARTER $125</h3>
                             <h2 className='font-[700] font-Rajdhani text-[33px] md:text-[20px] lg:text-[1vw]'>IN <span className='text-[#429763]'>STOCK</span></h2>
-                            <h6 className='mt-[20px] text-[14px] font-[700]'>Starter pack <span className='text-[#429763]'>$125</span> In STOCK</h6>
-                            <h6 className='text-14px] font-[700]'>Monthly ROI starts from 12%</h6>
+                            <span className='mt-[20px] text-[14px] font-[700]'>Starter pack <span className='text-[#429763]'>$125</span> In STOCK</span>
+                            <span className='text-[14px] font-[700]'>Monthly ROI starts from 12%</span>
                             <hr className='bg-[#449552] border-[#429763] border-[2px] w-[90%] md:w-[60%] h-[2px] mt-[3px] mb-[0.6vh]' />
-                            <h6 className='text-[15px] font-[700]'>PAYOUTS DAILY IN <span className='text-[#429763]'>BTC</span></h6>
+                            <span className='text-[15px] font-[700]'>PAYOUTS DAILY IN <span className='text-[#429763]'>BTC</span></span>
                         </div>
                     </div>
                 </div>
@@ -270,7 +272,7 @@ const Home = () => {
                     <div className="flex md:flex-row flex-col relative bg-[#8BD66C] rounded-[20px] w-[90%] lg:w-[55%] md:w-[80%] md:pr-[1.2vw] md:pl-[2vw] md:py-[5vh] py-[41px] px-[24px] shadow-[0px_4px_44px_rgba(0,0,0,0.25)]">
                         <div className="flex relative justify-end basis-[100%] md:basis-[70%] lg:basis-[50%]">
                             <div className="self-center absolute lg:left-0 sm:left-[30px] left-0 top-[20px] md:w-[30%]">
-                                <img src={CoinIcon} alt="coin" className='w-[100px] h-[80px] sm:w-[14vw] sm:h-[12vh] md:w-[10vw] md:h-[11vh]'/>
+                                <img src={CoinIcon} width='623' height='415' alt="coin" className='w-[100px]  sm:w-[14vw]  md:w-[10vw] '/>
                             </div>
                             <div className='flex justify-end lg:gap-4 gap-2 w-[70%] lg:h-auto md:h-[180px] h-[140px] lg:w-[70%]'>
                                 <div className="flex flex-col justify-between place-items-end h-full text-[#fff] basis-[60%] lg:basis-[60%]">
@@ -288,7 +290,7 @@ const Home = () => {
                         </div>
                         <div className="flex items-center md:ml-0 ml-[20px] md:justify-center basis-[45%] md:basis-[50%] md:mt-[20px] mt-[4vh]">
                             <div className="text-[#f2fff5]">
-                                <h1 className='text-[20px] lg:text-[1.4vw] md:text-[18px] font-[600]'>DAILY BTC PAYOUTS.<br />NO DELAY. NO HOLDS.</h1>
+                                <h2 className='text-[20px] lg:text-[1.4vw] md:text-[18px] font-[600]'>DAILY BTC PAYOUTS.<br />NO DELAY. NO HOLDS.</h2>
                                 <div className="">
                                     <button type='button' className='flex items-center font-rajdhani font-[600] bg-[#449552] md:mt-[6vh] border-[2px] border-[#449552] rounded-[10px] text-[14px] lg:text-[0.9vw] md:text-[15px] px-[39px] py-[12px] transition duration-300 hover:bg-opacity-70'  onClick={openModal}>Try Now <span className='ml-[10px]'>
                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" class="arrow-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg></span></button>
@@ -302,15 +304,15 @@ const Home = () => {
                 <div className="flex mt-[6vh] w-full justify-center items-center" id="calculator">
                     <div className="flex justify-between md:flex-row flex-col bg-[#8BD66C] bg-opacity-[39%] md:bg-opacity-[44%] w-[90%] lg:w-[55%] md:w-[80%] rounded-[10px] font-rajdhani py-[14px] px-[23px] md:pt-[17px] md:pr-[18px] md:pb-[26px] lg:pl-[45px] pl-[18px] shadow-[0px_4px_44px_rgb(0,0,0,0.15)]" >
                         <div className="basis-[40%] lg:basis-[40%] md:basis-[35%] pt-[14px]">
-                            <h2 className='text-[21px] lg:text-[24px] md:text-[20px] text-[#449552] font-[700]'>CHOOSE YOUR DESIRED TRACTOR</h2>
+                            <span className='text-[21px] lg:text-[24px] md:text-[20px] text-[#449552] font-[700]'>CHOOSE YOUR DESIRED TRACTOR</span>
                             <div className='flex md:flex-col gap-2'>
                                 <div className="mt-[15px] md:mt-[24px]">
-                                    <label htmlFor="" className='text-[#595A5B] text-[19px] lg:text-[24px] md:text-[20px] font-[700] mb-[2px]'>INVESTMENT IN $</label>
-                                    <input type="text" className='bg-[#f1f2d7] border-0 font-montserrat text-[18px] lg:text-[24px] md:text-[20px] py-[11px] px-[11px] md:pt-[15px] md:pb-[13px] md:pl-[23px] text-[#757575] rounded-[5px] w-full' value={`$ `+slideValue} onChange={e => sliderValueChange(e)} onBlur={e => sliderValueChanged(e)}/>
+                                    <label htmlFor="" for="investment_price" className='text-[#595A5B] text-[19px] lg:text-[24px] md:text-[20px] font-[700] mb-[2px]'>INVESTMENT IN $</label>
+                                    <input type="text" id="investment_price" className='bg-[#f1f2d7] border-0 font-montserrat text-[18px] lg:text-[24px] md:text-[20px] py-[11px] px-[11px] md:pt-[15px] md:pb-[13px] md:pl-[23px] text-[#757575] rounded-[5px] w-full' value={`$ `+slideValue} onChange={e => sliderValueChange(e)} onBlur={e => sliderValueChanged(e)}/>
                                 </div>
                                 <div className="mt-[15px] md:mt-[24px]">
-                                    <label htmlFor="" className='text-[#595A5B] text-[19px] lg:text-[24px] md:text-[20px] font-[700] mb-[2px]'>POWER</label>
-                                    <input type="text" className='bg-[#f1f2d7] border-0 font-montserrat text-[18px] lg:text-[24px] md:text-[20px] py-[11px] px-[11px] md:pt-[15px] md:pb-[13px] text-[#757575] rounded-[5px] w-full' value={slideValue * 16 + ` GH/s`} readOnly/>
+                                    <label htmlFor="" for="power" className='text-[#595A5B] text-[19px] lg:text-[24px] md:text-[20px] font-[700] mb-[2px]'>POWER</label>
+                                    <input type="text" id="power" className='bg-[#f1f2d7] border-0 font-montserrat text-[18px] lg:text-[24px] md:text-[20px] py-[11px] px-[11px] md:pt-[15px] md:pb-[13px] text-[#757575] rounded-[5px] w-full' value={slideValue * 16 + ` GH/s`} readOnly/>
                                 </div>
                             </div>
 
@@ -326,28 +328,28 @@ const Home = () => {
                                         <div className="items-center text-[#5e5a5b] text-[14px] md:text-[17px] mt-[15px]">
                                             <span>Daily Income</span>
                                         </div>
-                                        <h1 className='text-[24px] md:text-[30px] font-[700]'>${Number((slideValue * 0.004).toFixed(3))}</h1>
+                                        <span className='text-[24px] md:text-[30px] font-[700]'>${Number((slideValue * 0.004).toFixed(3))}</span>
                                     </div> 
                                     <div className="">
                                         <div className="items-center text-[#5e5a5b] text-[14px] md:text-[17px] mt-[12px]">
                                             <span>Monthly Income</span>
                                         </div>
-                                        <h1 className='text-[24px] md:text-[30px] font-[700]'>${Number((slideValue * 0.12).toFixed(3))}</h1>
+                                        <span className='text-[24px] md:text-[30px] font-[700]'>${Number((slideValue * 0.12).toFixed(3))}</span>
                                     </div> 
                                     <div className="">
                                         <div className="items-center text-[#5e5a5b] text-[14px] md:text-[17px] mt-[12px]">
                                             <span>Yearly Income</span>
                                         </div>
-                                        <h1 className='text-[24px] md:text-[30px] font-[700]'>${Number((slideValue * 0.12 * 12).toFixed(3))}</h1>
+                                        <span className='text-[24px] md:text-[30px] font-[700]'>${Number((slideValue * 0.12 * 12).toFixed(3))}</span>
                                     </div> 
                                 </div>
                                 <div className="self-end">
                                     <div>
-                                        <img alt="" className="w-[130px] h-[100px] lg:w-[210px] lg:h-[140px] md:w-[180px] md:h-[130px]" src={GreenTractor} style={{ display: showTractor === 1 ? "block" : "none" }} />
-                                        <img alt="" className="w-[160px] h-[95px] lg:w-[210px] lg:h-[140px] md:w-[190px] md:h-[130px]" src={YellowTractor} style={{ display: showTractor === 2 ? "block" : "none" }} />
-                                        <img alt="" className="w-[198px] h-[85px] lg:w-[200px] lg:h-[140px] md:w-[200px] md:h-[125px]" src={RedTractor} style={{ display: showTractor === 3 ? "block" : "none" }} />
-                                        <img alt="" className="w-[160px] h-[82px] lg:w-[200px] lg:h-[140px] md:w-[180px] md:h-[120px]" src={YellowTractor2} style={{ display: showTractor === 4 ? "block" : "none" }} />
-                                        <img alt="" className="w-[160px] h-[71px] lg:w-[200px] lg:h-[140px] md:w-[180px] md:h-[120px]" src={RedTractor2} style={{ display: showTractor === 5 ? "block" : "none" }} />
+                                        <img alt="" className="w-[130px]  lg:w-[210px]  md:w-[180px] " width='265' height='186' src={GreenTractor} style={{ display: showTractor === 1 ? "block" : "none" }} />
+                                        <img alt="" className="w-[160px]  lg:w-[210px]  md:w-[190px] " width='336' height='157' src={YellowTractor} style={{ display: showTractor === 2 ? "block" : "none" }} />
+                                        <img alt="" className="w-[198px]  lg:w-[200px]  md:w-[200px] " width='324' height='151' src={RedTractor} style={{ display: showTractor === 3 ? "block" : "none" }} />
+                                        <img alt="" className="w-[160px]  lg:w-[200px]  md:w-[180px] " width='292' height='144' src={YellowTractor2} style={{ display: showTractor === 4 ? "block" : "none" }} />
+                                        <img alt="" className="w-[160px] lg:w-[200px]  md:w-[180px] " width='292' height='136' src={RedTractor2} style={{ display: showTractor === 5 ? "block" : "none" }} />
                                     </div>
                                 </div>
                             </div>
@@ -358,7 +360,7 @@ const Home = () => {
                                             loggedin
                                             ?
                                             <Link className='flex items-center bg-[#449552] justify-center border-[2px] border-[#449552] rounded-[5px] lg:rounded-[10px] text-white text-[10px] lg:text-[18px] md:text-[15px] font-[600] py-[8px] px-[15px] lg:px-[37px] lg:py-[12px] md:px-[15px] md:py-[10px] transition duration-300 hover:bg-opacity-70 no-underline cursor-pointer' to='/creditcardcheck'>
-                                                <img src={CreditIcon} alt="" className='w-[15px] md:w-[23px] mr-[5px]'/> 
+                                                <img src={CreditIcon} width='48' height='35' alt="" className='w-[15px] md:w-[23px] mr-[5px]'/> 
                                                 Credit Card 
                                                 <span className='ml-[5px]'>
                                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" className="arrow-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg>
@@ -366,7 +368,7 @@ const Home = () => {
                                             </Link>
                                             :
                                             <button className='flex items-center bg-[#449552] justify-center border-[2px] border-[#449552] rounded-[5px] lg:rounded-[10px] text-[#fff] text-[10px] lg:text-[18px] md:text-[15px] font-[600] py-[8px] px-[15px] lg:px-[37px] lg:py-[12px] md:px-[15px] md:py-[10px] transition duration-300 hover:bg-opacity-70' onClick={openModal}>
-                                                <img src={CreditIcon} alt=""  className='w-[15px] md:w-[23px] mr-[5px]'/> 
+                                                <img src={CreditIcon} width='48' height='35' alt=""  className='w-[15px] md:w-[23px] mr-[5px]'/> 
                                                 Credit Card
                                                 <span className='ml-[5px]'>
                                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" className="arrow-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg>
@@ -380,7 +382,7 @@ const Home = () => {
                                             loggedin
                                             ?
                                             <Link to='/bitcoincheck' className='flex items-center bg-[#449552] justify-center border-[2px] border-[#449552] rounded-[5px] lg:rounded-[10px] text-white text-[10px] lg:text-[18px] md:text-[15px] font-[600] py-[8px] px-[15px] lg:px-[37px] lg:py-[12px] md:px-[15px] md:py-[10px] transition duration-300 hover:bg-opacity-70 no-underline cursor-pointer'>
-                                                <img src={BitcoinIcon2} alt="" className='w-[23px] mr-[10px]' />
+                                                <img src={BitcoinIcon2} width='48' height='35' alt="" className='w-[23px] mr-[10px]' />
                                                 Bitcoin
                                                 <span className='ml-[10px]'>
                                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" className="arrow-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg>
@@ -388,7 +390,7 @@ const Home = () => {
                                             </Link>
                                             :
                                             <button className='flex items-center bg-[#449552] justify-center border-[2px] border-[#449552] rounded-[5px] lg:rounded-[10px] text-[#fff] text-[10px] lg:text-[18px] md:text-[15px] font-[600] py-[8px] px-[15px] lg:px-[37px] lg:py-[12px] md:px-[15px] md:py-[10px] transition duration-300 hover:bg-opacity-70'  onClick={openModal}>
-                                                <img src={BitcoinIcon2} alt="" className='w-[23px] mr-[10px]' />
+                                                <img src={BitcoinIcon2} width='48' height='35' alt="" className='w-[23px] mr-[10px]' />
                                                 Bitcoin
                                                 <span className='ml-[10px]'>
                                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" className="arrow-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg>
@@ -418,11 +420,11 @@ const Home = () => {
                     <div className="w-[90%] md:grid grid-cols-2 gap-2 lg:w-[55%] md:w-[80%] text-left">
                         <div className="flex flex-col justify-between">
                             <div className="font-montserrat md:text-left text-center">
-                                <h1 className="text-[48px] lg:text-[65px] md:text-[40px] font-[600]">SIMPLE<span className='text-[#449552]'>RIGS</span></h1>
+                                <span className="text-[48px] lg:text-[65px] md:text-[40px] font-[600]">SIMPLE<span className='text-[#449552]'>RIGS</span></span>
                                 <p className='lg:text-[20px] md:text-[18px] text-[18px]'>THE CLOUD MINING COMPANY</p>
                             </div>
                             <div className="hidden md:flex justify-end items-end">
-                                <img className="w-[400px] mb-[-10px] mr-[-40px]" src={AboutTruck} alt="tractor-drag" />
+                                <img className="w-[400px] mb-[-10px] mr-[-40px]" src={AboutTruck} width='731' height='441' alt="tractor-drag" />
                             </div>
                         </div>
                         <div className="aboutus_list lg:mb-[79px] mb-[60px]">
@@ -500,7 +502,7 @@ const Home = () => {
         </div>
 
             {/* Footer */}
-        <div className="bg-no-repeat bg-cover lg:bg-cover bg-[url('../src/assets/images/footer.png')]">
+        <div className="bg-no-repeat bg-cover lg:bg-cover bg-[url('../src/assets/images/footer.webp')]">
             <footer className='flex relative items-center justify-center md:h-[35vh]'>
                 <img className='absolute top-[-125px] right-[20px] w-[185px] h-[152px] md:hidden block' src={AboutUSMobile} alt="About us" />
                 <div className="flex w-[90%] lg:w-[75%] md:items-center md:justify-center flex-col mt-[100px]">
@@ -508,14 +510,14 @@ const Home = () => {
                         <div className="">
                             <p className='text-[20px] font-[700] text-[#bac68e] mb-[8px] font-rajdhani'>We Accept</p>
                             <div className="flex items-center">
-                                <a href="/"><img className='w-[8vh]' src={Visa} alt="Visa" /></a>
-                                <a href="/"><img className='w-[6vh] mx-[16px]' src={Master} alt="Master" /></a>
-                                <a href="/"><img className='w-[3.5vh]' src={Bitcoin} alt="Bitcoin" /></a>
+                                <a href="/"><img className='w-[8vh]' src={Visa} alt="Visa" width='306' height='93' /></a>
+                                <a href="/"><img className='w-[6vh] mx-[16px]' width='191' height='112' src={Master} alt="Master" /></a>
+                                <a href="/"><img className='w-[3.5vh]' width='157' height='158' src={Bitcoin} alt="Bitcoin" /></a>
                             </div>
                         </div>
                         <div className=" font-montserrat text-[#BAC68E] md:mt-0 mt-[30px]">
-                            <h2 className='text-[25px] mb-0'>SIMPLE<span className='text-[#449552]'>RIGS</span></h2>
-                            <p className='text-[13px]'>THE CLOUD MINING COMPANY</p>
+                            <span className='text-[25px] mb-0'>SIMPLE<span className='text-[#449552]'>RIGS</span></span>
+                            <p className='text-[13px]'>THE <a href='https://simplerigs.com'>CLOUD MINING</a> COMPANY</p>
                             <p className='mb-[6px] text-[12px] md:mt-0 mt-[30px]'>Contact us 24/7 using</p>
                             <p className='mb-[6px] text-[12px]'>live chat or via support@simplerigs.com</p>
                             <p className='mb-[6px] text-[12px]'>CR NO. 2576021 date of incorporation: 2017-sep-07</p>
@@ -529,8 +531,8 @@ const Home = () => {
                             <button type='button' className='flex items-center bg-[#449552] border-[2px] border-[#449552] rounded-[10px] text-[#fff] text-[20px] font-[600] font-rajdhani lg:px-[36px] px-[36px] py-[10px] md:px-[15px] transition duration-300 hover:bg-opacity-70' onClick={openModal}>Start Mining <span className='block ml-[8px]'>
                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" className="" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg></span></button>
                             <div className='flex lg:flex-row flex-col jusitfy-between mt-[20px]'>
-                                <img className="md:w-[22vh] w-[240px]" src={GooglePlay} alt="tractor-drag-mobile" />
-                                <img className="md:w-[22vh] w-[240px] lg:ml-[19px] lg:mt-0 mt-[10px]" src={AppStore} alt="tractor-drag-mobile" />
+                                <img className="md:w-[22vh] w-[240px]" width='244' height='75' src={GooglePlay} alt="Google Play" />
+                                <img className="md:w-[22vh] w-[240px] lg:ml-[19px] lg:mt-0 mt-[10px]" src={AppStore} width='244' height='75' alt="App Store" />
                             </div>
                         </div> 
                     </div>
