@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Slider } from "@mui/material"
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import Carousel from "react-bootstrap/Carousel"
 import LoginModal from '../../compnents/LoginModal/LoginModal';
 import Navbar from '../../compnents/Navbar/Navbar';
@@ -54,6 +55,7 @@ const Home = () => {
     const [showTractor, setShowTractor] = React.useState(1);
     const [investors, setInvestors] = React.useState(0);
     const [investAmount, setInvestAmount] = React.useState(0);
+    const [offerEmail, setOfferEmail] = React.useState();
     const [BTCPrice, setBTCPrice] = React.useState(0);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -84,7 +86,29 @@ const Home = () => {
             dispatch(setSliderValueFor(125));
         }
     }
-
+    const sendOfferEmail = () => {
+        const data = { "email": offerEmail };
+        axios.post(process.env.REACT_APP_API_HOST + 'api/offerEmail', data)
+            .then((response) => {
+                toast.success(response.data.message, {
+                    position: "top-right",
+                    autoClose: 2000,
+                    closeOnClick: true,
+                    hideProgressBar: true,
+                });
+            })
+            .catch((error) => {
+                console.log(error.response);
+                if (error.response.status === 500) {
+                    toast.error(error.response.data.message, {
+                        position: "top-right",
+                        autoClose: 2000,
+                        closeOnClick: true,
+                        hideProgressBar: true,
+                    });
+                }
+            });
+    }
     const sliderChange = (e) => {
         setSlideValue(e.target.value);
         dispatch(setSliderValueFor(e.target.value));
@@ -409,8 +433,8 @@ const Home = () => {
                     <div className='lg:w-[55%] md:w-[80%] text-center'>
                         <p className='bg-[#fff] pt-[27px] pr-[29px] pb-[24px] pl-[21px] rounded-[22px] text-[#757575] lg:text-[21px] text-[15px] w-full shadow-[0px_4px_44px_rgb(0,0,0,0.15)]'>Investments over $5,000 are eligible for an individual conditions. Leave Your email to get a special offer</p>
                         <div className='flex justify-evenly mt-[25px]'>
-                            <input type="text" placeholder='Enter Your Email' className='outline-none bg-[#fff] text-[18px] text-[#757575] py-[13px] rounded-[10px] text-center lg:w-[374px] md:w-[300px] shadow-[0px_4px_44px_rgb(0,0,0,0.15)]' />
-                            <button className='font-Rajdhani font-[600] py-[13px] pr-[45px] pl-[54px] bg-[#449552] border-[2px] border-[#449552] rounded-[10px] text-[#fff] text-[20px] transition duration-300 hover:bg-opacity-70 shadow-[0px_4px_44px_rgb(0,0,0,0.15)]'>Send me an offer</button>
+                            <input type="text" value={offerEmail}  onChange={e => setOfferEmail(e.target.value)} placeholder='Enter Your Email' className='outline-none bg-[#fff] text-[18px] text-[#757575] py-[13px] rounded-[10px] text-center lg:w-[374px] md:w-[300px] shadow-[0px_4px_44px_rgb(0,0,0,0.15)]' />
+                            <button onClick={sendOfferEmail} className='font-Rajdhani font-[600] py-[13px] pr-[45px] pl-[54px] bg-[#449552] border-[2px] border-[#449552] rounded-[10px] text-[#fff] text-[20px] transition duration-300 hover:bg-opacity-70 shadow-[0px_4px_44px_rgb(0,0,0,0.15)]'>Send me an offer</button>
                         </div>
                     </div>
                 </div>

@@ -497,7 +497,7 @@ const Dashboard = () => {
                                                         }
                                                         
                                                     </div>
-                                                    <div className='flex justify-center mt-[3vh] items-center bg-[#ffffff] shadow-[0px_0px_14px_rgba(0,0,0,0.1)] rounded-[10px] px-[15px] py-[15px]'>
+                                                    <div className='lg:hidden flex justify-center mt-[3vh] items-center bg-[#ffffff] shadow-[0px_0px_14px_rgba(0,0,0,0.1)] rounded-[10px] px-[15px] py-[15px]'>
                                                             {pricechartData &&
                                                                 <Line options={options} data={pricechartData} className="h-[70vh] w-[18vw]"/>
                                                             }
