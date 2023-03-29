@@ -10,7 +10,7 @@ import './navbar.css'
 const Navbar = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const user_id = localStorage.getItem('user_id');
+    const user_id = Number(localStorage.getItem('user_id'));
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const access_token = localStorage.getItem('access_token');
