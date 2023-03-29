@@ -113,7 +113,7 @@ const Deposit = () => {
         console.log("deposit modal show");
         setDepositType(e);
         setDepositModalShow(true);
-        const data = { "user_id": localStorage.getItem('user_id'), "accessToken": access_token, "amount": slideValue, "power": slideValue * 16, "year_pro" : slideValue * 0.12 * 12 };
+        const data = { "user_id": Number(localStorage.getItem('user_id')), "accessToken": access_token, "amount": slideValue, "power": slideValue * 16, "year_pro" : slideValue * 0.12 * 12 };
         axios.post(process.env.REACT_APP_API_HOST + 'api/requestOrder', data)
             .then((response) => {
                 console.log("called");

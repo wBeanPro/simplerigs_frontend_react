@@ -63,7 +63,7 @@ const Referrals = () => {
                 })
         }
 
-        axios.get(process.env.REACT_APP_API_HOST + 'api/getReferralInfo/' + localStorage.getItem('user_id'))
+        axios.get(process.env.REACT_APP_API_HOST + 'api/getReferralInfo/' + Number(localStorage.getItem('user_id')))
             .then((response) => {
                 setClickCount(response.data.click);
                 setSignUpCount(response.data.signup);

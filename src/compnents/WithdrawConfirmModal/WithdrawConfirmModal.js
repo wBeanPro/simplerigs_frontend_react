@@ -35,7 +35,7 @@ const WithdrawConfirmModal = ({ modalTile, availableBalance, closeWithdrawModal 
                 hideProgressBar: true,
             });
         } else {
-            const data = { "id": localStorage.getItem('user_id'), "accessToken": access_token, "amount": withdrawAmount, "wallet": withdrawAddress };
+            const data = { "id": Number(localStorage.getItem('user_id')), "accessToken": access_token, "amount": withdrawAmount, "wallet": withdrawAddress };
             axios.post(process.env.REACT_APP_API_HOST + 'api/requestWithdraw', data)
                 .then((response) => {
                     toast.success(response.data.message, {

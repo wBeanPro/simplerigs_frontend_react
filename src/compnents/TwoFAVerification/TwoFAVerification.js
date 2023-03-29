@@ -11,7 +11,7 @@ const TwoFAVerification = ({closeTwoFAModal}) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     useEffect(()=> {
-        const user_id = localStorage.getItem('user_id');
+        const user_id = Number(localStorage.getItem('user_id'));
         const access_token = localStorage.getItem('access_token');
         const data = {"user_id": user_id, "accessToken": access_token}
         axios.post( process.env.REACT_APP_API_HOST+'api/getQrcode', data)
@@ -23,7 +23,7 @@ const TwoFAVerification = ({closeTwoFAModal}) => {
         })
     },[]);
     const checkQRCode = () => {
-        const user_id = localStorage.getItem('user_id');
+        const user_id = Number(localStorage.getItem('user_id'));
         const access_token = localStorage.getItem('access_token');
         const data = {"user_id" : user_id, "accessToken": access_token, "code" : code};
         axios.post( process.env.REACT_APP_API_HOST+'api/qrcodeVerify', data)
