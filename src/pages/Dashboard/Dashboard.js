@@ -366,7 +366,7 @@ const Dashboard = () => {
                                                                             <div className='flex items-center w-[50%] lg:w-full h-[6vh] px-[20px] grid grid-cols-10 rounded-[10px] lg:shadow-[0px_4px_44px_rgba(0,0,0,0.1)] lg:bg-[#ffffff] lg:bg-opacity-[30%] text-[11px]' style={{background: `${selectedMiner===index ? '#8bd66c' : 'white'}` }} key={index}>
                                                                                 <p className='col-span-3 mb-0 font-[500]'>Miner {plan.no}</p>
                                                                                 <p className='col-span-3 mb-0 font-[500]'>{plan.deposit_date}</p>
-                                                                                <p className='col-span-3 mb-0 font-[700]'>{plan.balance}</p>
+                                                                                <p className='col-span-3 mb-0 font-[700]'>{Number(plan.balance.toFixed(6))}</p>
                                                                                 <IoEllipsisHorizontalCircle className='cursor-pointer w-[20px] h-[20px]' onClick={() => setPlanListShow(index)} />
                                                                             </div>
                                                                         </>
@@ -383,7 +383,7 @@ const Dashboard = () => {
                                                                                 <IoEllipsisHorizontalCircle className='cursor-pointer w-[20px] h-[20px] mt-[0px]' onClick={() => setPlanListShow(index)} />
                                                                             </div>
                                                                             <p className='mb-0 font-[500]'>{plan.deposit_date}</p>
-                                                                            <p className='mb-0 font-[700]'>{plan.balance}</p>
+                                                                            <p className='mb-0 font-[700]'>{Number(plan.balance.toFixed(6))}</p>
                                                                         </div>
                                                                     )
                                                                 }
@@ -569,7 +569,7 @@ const Dashboard = () => {
                                                         <div className='lg:grid hidden items-center w-full h-[13%] px-[62px] grid-cols-11 rounded-[10px] bg-[#ffffff] shadow-[0px_4px_44px_rgba(0,0,0,0.1)] text-[#4B4B4B]' key={index}>
                                                             <p className='col-span-3 mb-[0px] font-[500]'>Miner {plan.no}</p>
                                                             <p className='col-span-3 mb-[0px] font-[500]'>{plan.deposit_date}</p>
-                                                            <p className='col-span-2 mb-[0px] font-[700]'>{plan.balance}</p>
+                                                            <p className='col-span-2 mb-[0px] font-[700]'>{Number(plan.balance.toFixed(6))}</p>
                                                             <p className='col-span-2 mb-[0px] font-[500]'>{plan.power}</p>
                                                             <IoEllipsisHorizontalCircle className='justify-end cursor-pointer col-span-1 w-[20px] h-[20px]' onClick={() => setPlanListShow(index)} />
                                                         </div>
@@ -591,7 +591,7 @@ const Dashboard = () => {
                                                             <div className="flex justify-between">
                                                                 <div className="space-y-[5px]">
                                                                     <p className='mb-[0px] text-[10px] font-[500] font-Rajdhani md:font-montserrat'>Amount</p>
-                                                                    <p className='mb-[0px] text-[12px] font-[700]'>{plan.balance}</p>
+                                                                    <p className='mb-[0px] text-[12px] font-[700]'>{Number(plan.balance.toFixed(6))}</p>
                                                                 </div>
 
                                                                 <div className="space-y-[5px]">
