@@ -727,13 +727,13 @@ const Dashboard = () => {
                             <div className='px-[1.5vw] mt-[10px]'>
                                 <div className='bg-[#fff] bg-opacity-[30%] w-full rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)] py-[8px] px-[6px] lg:py-[1vh] lg:px-[0.8vw] text-[#595A5B] text-[1.5vh] lg:text-[0.6vw] font-[500] leading-[2vh] text-left space-y-[1vh] md:font-montserrat font-Rajdhani'>
                                     <div className='flex items-center'>
-                                        <p className='mr-[8px] text-[30px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
+                                        <p className='mr-[8px] text-[30px] mb-[0] '><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>Daily Withdrawal Limit: 2 BTC</p>
                                         <AiOutlineQuestionCircle className='text-[#1E9E39] lg:ml-[0px] ml-[10px] w-[20px] h-[18px] lg:w-[2vw] lg:h-[2vh]' />
                                     </div>
 
                                     <div className='flex'>
-                                        <p className='mr-[8px] text-[30px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
+                                        <p className='mr-[8px] text-[30px] mb-[0] lg:pt-[7px] pt-[5px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                         <p className='mb-[0]'>If you have made deposits before the withdrawal, please make sure they are complete. </p>
                                     </div>
                                 </div>

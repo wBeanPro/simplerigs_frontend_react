@@ -249,17 +249,17 @@ const Deposit = () => {
 
                                     <div className='deposit_description w-full lg:w-[33vw] rounded-[15px] bg-[#C9E8BF] space-y-[14px] px-[20px] py-[20px] lg:py-[1.4vh] lg:pr-[1vw] lg:pl-[1vw] lg:space-y-[0.6vw] text-[#4B4B4B] lg:font-montserrat text-[15px] font-Rajdhani lg:text-[95%] leading-[19.5px]'>
                                         <div className='flex'>
-                                            <p className='mr-[12px] text-[20px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
+                                            <p className='mr-[12px] text-[20px] lg:pt-[8px] pt-[7px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                             <p className=''>Credit card or Bitcoins payment may be processed at Your own decision;</p>
                                         </div>
 
                                         <div className='flex'>
-                                            <p className='mr-[12px] text-[20px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
+                                            <p className='mr-[12px] text-[20px] lg:pt-[8px] pt-[7px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                             <p className=''>Choose an assosiated button to proceed;</p>
                                         </div>
 
                                         <div className='flex'>
-                                            <p className='mr-[12px] text-[20px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
+                                            <p className='mr-[12px] text-[20px] lg:pt-[8px] pt-[7px]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
                                             <p className=''>No extra fees will be charged on our end;</p>
                                         </div>
                                     </div>
