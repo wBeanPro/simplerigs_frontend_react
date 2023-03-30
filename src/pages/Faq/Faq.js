@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import DocumentMeta from 'react-document-meta';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { BiUserCircle } from 'react-icons/bi';
@@ -56,7 +57,18 @@ const Faq = () => {
     const CloseToIcon = () => {
         navigate('/');
     }
-    return (
+    const meta = {
+        title: 'Frequently Asked Questions (FAQs) - Simple Rigs Crypto Cloud Mining',
+        description: "Get answers to your questions about Simple Rigs' crypto cloud mining ServiceWorkerRegistration. Visit our FAQ page for trusted and reliable information.",
+        canonical: 'https://www.simplerigs.com/faqs',
+        meta: {
+          charset: 'utf-8',
+          name: {
+            h1: 'FAQ',
+          }
+        }
+      };
+    return (<DocumentMeta {...meta}>
         <>
             {loginStatus ?
                 <>
@@ -370,6 +382,7 @@ const Faq = () => {
                 <MobSidebar SidbarTitle="FAQ" NavigationLink="/faqs" MobileSidebar={MobileSidebar} setMobileSidebar={setMobileSidebar} />
             }
         </>
+        </DocumentMeta>
     )
 }
 

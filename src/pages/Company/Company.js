@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import DocumentMeta from 'react-document-meta';
 import MobSidebar from '../../compnents/MobSidebar/MobSidebar';
 import Sidebar from '../../compnents/Sidebar/Sidebar';
 import Navbar from '../../compnents/Navbar/Navbar';
@@ -55,7 +56,18 @@ const Company = () => {
     const CloseToIcon = () => {
         navigate('/');
     }
-    return (
+    const meta = {
+        title: 'Simple Rigs - Cryptocurrency Cloud Mining Company',
+        description: "Simple Rigs is a cryptocurrency cloud mining company that legit and reputable. No delay. No holds. Start investment in crypto mining with us!",
+        canonical: 'https://www.simplerigs.com/company',
+        meta: {
+          charset: 'utf-8',
+          name: {
+            h1: 'Simple Rigs - The Best Cloud Mining Company',
+          }
+        }
+      };
+    return (<DocumentMeta {...meta}>
         <>
             {loginStatus ?
                 <>
@@ -234,8 +246,8 @@ We are proud to be pioneers in the cryptocurrency industry and look forward to c
 
             We are proud to be pioneers in the cryptocurrency industry and look forward to continuing to lead the way in the years to come. </p>
                                                 
-                                                <p itemProp='url' className='hidden'>https://simplerigs.com</p>
-                                                <p itemProp='logo' className='hidden'>https://simplerigs.com/favicon.ico</p>
+                                                <p itemProp='url' className='hidden'>https://www.simplerigs.com</p>
+                                                <p itemProp='logo' className='hidden'>https://www.simplerigs.com/favicon.ico</p>
                                                 {/* <div>
                                                     <div className='flex'>
                                                         <p className='mr-[12px] pt-[8px] mb-[0]'><svg style={{width:'5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#555555" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"/></svg></p>
@@ -308,6 +320,7 @@ We are proud to be pioneers in the cryptocurrency industry and look forward to c
                 <MobSidebar SidbarTitle="Company" NavigationLink="/company" MobileSidebar={MobileSidebar} setMobileSidebar={setMobileSidebar} />
             }
         </>
+        </DocumentMeta>
     )
 }
 

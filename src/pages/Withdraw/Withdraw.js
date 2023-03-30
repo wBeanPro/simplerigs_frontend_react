@@ -195,7 +195,7 @@ const Withdraw = () => {
                                         <div className='flex flex-col lg:mt-[0px] mt-[30px] space-y-[3vh] w-full lg:w-[70%]'>
                                             <div className='shadow-[0px_5px_14px_rgba(0,0,0,0.15)] w-full lg:w-[80%] flex flex-col space-y-[1vh] bg-[#C9E8BF] rounded-[10px] py-[12px] px-[17px] lg:pt-[1.5vh] lg:pb-[1.5vh] lg:pl-[1.5vw] text-[#4B4B4B] lg:font-montserrat font-Rajdhani text-[15px] lg:text-[0.7vw] font-[600] lg:font-[700] leading-[2.5vh] lg:leading-[1.8vh]'>
                                                 <p className='mb-0'>Total Balance: {toFixed(Number(Number(totalBalance).toFixed(3)))} BTC</p>
-                                                <p>Referral Balance: {toFixed(Number(Number(referalBalance).toFixed(3)))} BTC</p>
+                                                <p>Referral Reward Earned: {toFixed(Number(Number(referalBalance).toFixed(6)))} BTC</p>
                                                 <p>1 BTC = $ {toFixed(Number(Number(BTCPrice).toFixed(3)))}</p>
                                                 <p className='text-[13px] lg:text-[90%] font-[400]'>Bitcoin price has all conversation rate fees included</p>
                                             </div>
@@ -231,7 +231,7 @@ const Withdraw = () => {
                                                                                     <p className='col-span-2 font-[300]'>{item.date}</p>
                                                                                     <p className='col-span-3 font-[500] text-[80%]'>{item.address}</p>
                                                                                     {/* <p className='col-span-1 font-[700]'>{toFixed(Number(Number(item.amount).toFixed(8)))} BTC</p> */}
-                                                                                    <p className='col-span-1 font-[700]'>{item.amount} BTC</p>
+                                                                                    <p className='col-span-1 font-[700]'>{Number(item.amount.toFixed(6))} BTC</p>
                                                                                 </div>
                                                                             </>
                                                                         )
@@ -256,7 +256,7 @@ const Withdraw = () => {
                                                                                         <div className='w-full'>
                                                                                             <div className='flex justify-between text-[13px] mb-[15px]'>
                                                                                                 <p className='mb-[0px] font-[400]'>{item.date}</p>
-                                                                                                <p className='mb-[0px] font-[700]'>{item.amount} BTC</p>
+                                                                                                <p className='mb-[0px] font-[700]'>{Number(item.amount.toFixed(6))} BTC</p>
                                                                                             </div>
                                                                                             <p className='font-[500] text-[11px] font-Rajdhani mb-[5px]'>Wallet Address</p>
                                                                                             <p className='font-[500] text-[11px] mb-[0px]'>{item.address}</p>

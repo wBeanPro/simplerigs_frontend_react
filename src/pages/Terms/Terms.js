@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import DocumentMeta from 'react-document-meta';
 import MobSidebar from '../../compnents/MobSidebar/MobSidebar';
 import Sidebar from '../../compnents/Sidebar/Sidebar';
 import Navbar from '../../compnents/Navbar/Navbar';
@@ -54,7 +55,18 @@ const Terms = () => {
     const CloseToIcon = () => {
         navigate('/');
     }
-    return (
+    const meta = {
+        title: 'Terms of Use - Simple Rigs: Legit Crypto Cloud Mining Company',
+        description: "Discover Simple Rigs' crypto cloud mining Terms of Use. Trustworthly and legit company policies to ensure a secure and seamless experience",
+        canonical: 'https://www.simplerigs.com/terms',
+        meta: {
+          charset: 'utf-8',
+          name: {
+            h1: 'Terms of Use',
+          }
+        }
+      };
+    return (<DocumentMeta {...meta}>
         <>
             {loginStatus ?
                 <>
@@ -100,7 +112,7 @@ const Terms = () => {
                                                 <br />
                                                 <p className='lowercase'>THEY SET OUT HOW THE SIMPLERIGS.COM CLOUD HOSTED CRYPTOCURRENCY MINING SERVICE WORKS AND DESCRIBE ANY ASSOCIATED RIGHTS AND RESPONSIBILITIES. THE SIMPLERIGS.COM TERMS OF SERVICE AND ANY INSTRUCTIONS, GUIDANCE AND SIMILAR INFORMATION FOUND ON THE WEBSITE (FROM TIME TO TIME) ALSO APPLY TO HOW YOU USE THE SIMPLERIGS.COM CLOUD MINING SERVICE (TOGETHER THE "AGREEMENT"). BY USING THE WEBSITE AND/OR THE SERVICE, YOU AGREE TO THESE TERMS OF SERVICE; IF YOU DO NOT AGREE, DO NOT USE THE SITE AND/OR THE SERVICE.</p>
                                                 <br />
-                                                <p className='lowercase'>SIMPLERIGS RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO AMEND, CHANGE, MODIFY, ADD OR REMOVE PORTIONS OF THESE TERMS OF SERVICE, AT ANY TIME. IT IS YOUR RESPONSIBILITY TO CHECK THESE TERMS PERIODICALLY FOR CHANGES. THE CURRENT VERSION OF THESE TERMS IS AVAILABLE AT HTTPS://SIMPLERIGS.COM/TERMS. YOUR CONTINUED USE OF THE WEBSITE AND/OR THE SERVICE FOLLOWING THE PUBLISHED UPDATES TO THE TERMS WILL MEAN THAT YOU ACCEPT AND AGREE TO THE CHANGES. AS LONG AS YOU AGREE AND COMPLY WITH THESE TERMS, SIMPLERIGS GRANTS YOU A PERSONAL, NON- EXCLUSIVE, NON-TRANSFERABLE, LIMITED PRIVILEGE TO ENTER AND USE THE WEBSITE AND THE SERVICE.</p><br />
+                                                <p className='lowercase'>SIMPLERIGS RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO AMEND, CHANGE, MODIFY, ADD OR REMOVE PORTIONS OF THESE TERMS OF SERVICE, AT ANY TIME. IT IS YOUR RESPONSIBILITY TO CHECK THESE TERMS PERIODICALLY FOR CHANGES. THE CURRENT VERSION OF THESE TERMS IS AVAILABLE AT HTTPS://www.SIMPLERIGS.COM/TERMS. YOUR CONTINUED USE OF THE WEBSITE AND/OR THE SERVICE FOLLOWING THE PUBLISHED UPDATES TO THE TERMS WILL MEAN THAT YOU ACCEPT AND AGREE TO THE CHANGES. AS LONG AS YOU AGREE AND COMPLY WITH THESE TERMS, SIMPLERIGS GRANTS YOU A PERSONAL, NON- EXCLUSIVE, NON-TRANSFERABLE, LIMITED PRIVILEGE TO ENTER AND USE THE WEBSITE AND THE SERVICE.</p><br />
 
                                                 <p className='lowercase'>CLOUD MINING INVOLVES FINANCIAL RISKS AND MAY NOT BE APPROPRIATE FOR ALL PEOPLE. ANY INVESTMENT DECISIONS THAT YOU MAKE ARE SOLELY YOUR RESPONSIBILITY</p><br />
 
@@ -117,7 +129,7 @@ const Terms = () => {
                                                     <br /><br /> 1.2.5. "Hashrate" or "Hash rate" is the mining power of the Mining Hardware used to mine Cryptocurrencies. Hashrate is mining algorithm specific (SHA-256, Scrypt, X11 etc);
                                                     <br /><br /> 1.2.6. "Cloud Machine" is the virtual mining power of the Service purchased by a Miner and administered by a Miner using the Website. “Cloud Machine” is a derivative of a real mining machine;
                                                     <br /><br /> 1.2.7. "Service" is Simplerigs contract, which enables individuals to virtually mine Cryptocurrencies for themselves. Simplerigs contract performance is deriving from Mining Hardware efficiency and costs. Simplerigs “Service” in no way should be considered as a purchase of real mining equipment;
-                                                    <br /><br /> 1.2.8. the "Support" or "Customer Support" or "Helpdesk" is the technical support service of Simplerigs that is provided via email/ticket system, available in the Simplerigs FAQ at http://Simplerigs.com/faq where Customers can find answers to general questions and request assistance by submitting a request;
+                                                    <br /><br /> 1.2.8. the "Support" or "Customer Support" or "Helpdesk" is the technical support service of Simplerigs that is provided via email/ticket system, available in the Simplerigs FAQ at http://www.Simplerigs.com/faq where Customers can find answers to general questions and request assistance by submitting a request;
                                                     <br /><br /> 1.2.9. the "Dashboard" is the graphical user interface of the Service, with which the Miner interacts to perform all actions related to the Service;
                                                     <br /><br /> 1.2.10. the "Website" is Simplerigs.com and any apps, software, emails or other websites which we use to provide the services of Simplerigs.com (which includes the Service);
                                                     <br /><br /> 1.2.11. a "Payout" is the periodic deposit to your Balance, dependent on your Cloud Machine. Simplerigs may change the periodicity of Payouts at any time, to a maximum of once per 24 hours;
@@ -383,7 +395,7 @@ const Terms = () => {
                                     <br />
                                     <p className='lowercase'>THEY SET OUT HOW THE SIMPLERIGS.COM CLOUD HOSTED CRYPTOCURRENCY MINING SERVICE WORKS AND DESCRIBE ANY ASSOCIATED RIGHTS AND RESPONSIBILITIES. THE SIMPLERIGS.COM TERMS OF SERVICE AND ANY INSTRUCTIONS, GUIDANCE AND SIMILAR INFORMATION FOUND ON THE WEBSITE (FROM TIME TO TIME) ALSO APPLY TO HOW YOU USE THE SIMPLERIGS.COM CLOUD MINING SERVICE (TOGETHER THE "AGREEMENT"). BY USING THE WEBSITE AND/OR THE SERVICE, YOU AGREE TO THESE TERMS OF SERVICE; IF YOU DO NOT AGREE, DO NOT USE THE SITE AND/OR THE SERVICE.</p>
                                     <br />
-                                    <p className='lowercase'>SIMPLERIGS RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO AMEND, CHANGE, MODIFY, ADD OR REMOVE PORTIONS OF THESE TERMS OF SERVICE, AT ANY TIME. IT IS YOUR RESPONSIBILITY TO CHECK THESE TERMS PERIODICALLY FOR CHANGES. THE CURRENT VERSION OF THESE TERMS IS AVAILABLE AT HTTPS://SIMPLERIGS.COM/TERMS. YOUR CONTINUED USE OF THE WEBSITE AND/OR THE SERVICE FOLLOWING THE PUBLISHED UPDATES TO THE TERMS WILL MEAN THAT YOU ACCEPT AND AGREE TO THE CHANGES. AS LONG AS YOU AGREE AND COMPLY WITH THESE TERMS, SIMPLERIGS GRANTS YOU A PERSONAL, NON- EXCLUSIVE, NON-TRANSFERABLE, LIMITED PRIVILEGE TO ENTER AND USE THE WEBSITE AND THE SERVICE.</p><br />
+                                    <p className='lowercase'>SIMPLERIGS RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO AMEND, CHANGE, MODIFY, ADD OR REMOVE PORTIONS OF THESE TERMS OF SERVICE, AT ANY TIME. IT IS YOUR RESPONSIBILITY TO CHECK THESE TERMS PERIODICALLY FOR CHANGES. THE CURRENT VERSION OF THESE TERMS IS AVAILABLE AT HTTPS://www.SIMPLERIGS.COM/TERMS. YOUR CONTINUED USE OF THE WEBSITE AND/OR THE SERVICE FOLLOWING THE PUBLISHED UPDATES TO THE TERMS WILL MEAN THAT YOU ACCEPT AND AGREE TO THE CHANGES. AS LONG AS YOU AGREE AND COMPLY WITH THESE TERMS, SIMPLERIGS GRANTS YOU A PERSONAL, NON- EXCLUSIVE, NON-TRANSFERABLE, LIMITED PRIVILEGE TO ENTER AND USE THE WEBSITE AND THE SERVICE.</p><br />
 
                                     <p className='lowercase'>CLOUD MINING INVOLVES FINANCIAL RISKS AND MAY NOT BE APPROPRIATE FOR ALL PEOPLE. ANY INVESTMENT DECISIONS THAT YOU MAKE ARE SOLELY YOUR RESPONSIBILITY</p><br />
 
@@ -400,7 +412,7 @@ const Terms = () => {
                                         <br /><br /> 1.2.5. "Hashrate" or "Hash rate" is the mining power of the Mining Hardware used to mine Cryptocurrencies. Hashrate is mining algorithm specific (SHA-256, Scrypt, X11 etc);
                                         <br /><br /> 1.2.6. "Cloud Machine" is the virtual mining power of the Service purchased by a Miner and administered by a Miner using the Website. “Cloud Machine” is a derivative of a real mining machine;
                                         <br /><br /> 1.2.7. "Service" is Simplerigs contract, which enables individuals to virtually mine Cryptocurrencies for themselves. Simplerigs contract performance is deriving from Mining Hardware efficiency and costs. Simplerigs “Service” in no way should be considered as a purchase of real mining equipment;
-                                        <br /><br /> 1.2.8. the "Support" or "Customer Support" or "Helpdesk" is the technical support service of Simplerigs that is provided via email/ticket system, available in the Simplerigs FAQ at http://Simplerigs.com/faq where Customers can find answers to general questions and request assistance by submitting a request;
+                                        <br /><br /> 1.2.8. the "Support" or "Customer Support" or "Helpdesk" is the technical support service of Simplerigs that is provided via email/ticket system, available in the Simplerigs FAQ at http://www.Simplerigs.com/faq where Customers can find answers to general questions and request assistance by submitting a request;
                                         <br /><br /> 1.2.9. the "Dashboard" is the graphical user interface of the Service, with which the Miner interacts to perform all actions related to the Service;
                                         <br /><br /> 1.2.10. the "Website" is Simplerigs.com and any apps, software, emails or other websites which we use to provide the services of Simplerigs.com (which includes the Service);
                                         <br /><br /> 1.2.11. a "Payout" is the periodic deposit to your Balance, dependent on your Cloud Machine. Simplerigs may change the periodicity of Payouts at any time, to a maximum of once per 24 hours;
@@ -694,7 +706,7 @@ const Terms = () => {
                                                 <br />
                                                 <p className='lowercase'>THEY SET OUT HOW THE SIMPLERIGS.COM CLOUD HOSTED CRYPTOCURRENCY MINING SERVICE WORKS AND DESCRIBE ANY ASSOCIATED RIGHTS AND RESPONSIBILITIES. THE SIMPLERIGS.COM TERMS OF SERVICE AND ANY INSTRUCTIONS, GUIDANCE AND SIMILAR INFORMATION FOUND ON THE WEBSITE (FROM TIME TO TIME) ALSO APPLY TO HOW YOU USE THE SIMPLERIGS.COM CLOUD MINING SERVICE (TOGETHER THE "AGREEMENT"). BY USING THE WEBSITE AND/OR THE SERVICE, YOU AGREE TO THESE TERMS OF SERVICE; IF YOU DO NOT AGREE, DO NOT USE THE SITE AND/OR THE SERVICE.</p>
                                                 <br />
-                                                <p className='lowercase'>SIMPLERIGS RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO AMEND, CHANGE, MODIFY, ADD OR REMOVE PORTIONS OF THESE TERMS OF SERVICE, AT ANY TIME. IT IS YOUR RESPONSIBILITY TO CHECK THESE TERMS PERIODICALLY FOR CHANGES. THE CURRENT VERSION OF THESE TERMS IS AVAILABLE AT HTTPS://SIMPLERIGS.COM/TERMS. YOUR CONTINUED USE OF THE WEBSITE AND/OR THE SERVICE FOLLOWING THE PUBLISHED UPDATES TO THE TERMS WILL MEAN THAT YOU ACCEPT AND AGREE TO THE CHANGES. AS LONG AS YOU AGREE AND COMPLY WITH THESE TERMS, SIMPLERIGS GRANTS YOU A PERSONAL, NON- EXCLUSIVE, NON-TRANSFERABLE, LIMITED PRIVILEGE TO ENTER AND USE THE WEBSITE AND THE SERVICE.</p><br />
+                                                <p className='lowercase'>SIMPLERIGS RESERVES THE RIGHT, AT ITS SOLE DISCRETION, TO AMEND, CHANGE, MODIFY, ADD OR REMOVE PORTIONS OF THESE TERMS OF SERVICE, AT ANY TIME. IT IS YOUR RESPONSIBILITY TO CHECK THESE TERMS PERIODICALLY FOR CHANGES. THE CURRENT VERSION OF THESE TERMS IS AVAILABLE AT HTTPS://www.SIMPLERIGS.COM/TERMS. YOUR CONTINUED USE OF THE WEBSITE AND/OR THE SERVICE FOLLOWING THE PUBLISHED UPDATES TO THE TERMS WILL MEAN THAT YOU ACCEPT AND AGREE TO THE CHANGES. AS LONG AS YOU AGREE AND COMPLY WITH THESE TERMS, SIMPLERIGS GRANTS YOU A PERSONAL, NON- EXCLUSIVE, NON-TRANSFERABLE, LIMITED PRIVILEGE TO ENTER AND USE THE WEBSITE AND THE SERVICE.</p><br />
 
                                                 <p className='lowercase'>CLOUD MINING INVOLVES FINANCIAL RISKS AND MAY NOT BE APPROPRIATE FOR ALL PEOPLE. ANY INVESTMENT DECISIONS THAT YOU MAKE ARE SOLELY YOUR RESPONSIBILITY</p><br />
 
@@ -711,7 +723,7 @@ const Terms = () => {
                                                     <br /><br /> 1.2.5. "Hashrate" or "Hash rate" is the mining power of the Mining Hardware used to mine Cryptocurrencies. Hashrate is mining algorithm specific (SHA-256, Scrypt, X11 etc);
                                                     <br /><br /> 1.2.6. "Cloud Machine" is the virtual mining power of the Service purchased by a Miner and administered by a Miner using the Website. “Cloud Machine” is a derivative of a real mining machine;
                                                     <br /><br /> 1.2.7. "Service" is Simplerigs contract, which enables individuals to virtually mine Cryptocurrencies for themselves. Simplerigs contract performance is deriving from Mining Hardware efficiency and costs. Simplerigs “Service” in no way should be considered as a purchase of real mining equipment;
-                                                    <br /><br /> 1.2.8. the "Support" or "Customer Support" or "Helpdesk" is the technical support service of Simplerigs that is provided via email/ticket system, available in the Simplerigs FAQ at http://Simplerigs.com/faq where Customers can find answers to general questions and request assistance by submitting a request;
+                                                    <br /><br /> 1.2.8. the "Support" or "Customer Support" or "Helpdesk" is the technical support service of Simplerigs that is provided via email/ticket system, available in the Simplerigs FAQ at http://www.Simplerigs.com/faq where Customers can find answers to general questions and request assistance by submitting a request;
                                                     <br /><br /> 1.2.9. the "Dashboard" is the graphical user interface of the Service, with which the Miner interacts to perform all actions related to the Service;
                                                     <br /><br /> 1.2.10. the "Website" is Simplerigs.com and any apps, software, emails or other websites which we use to provide the services of Simplerigs.com (which includes the Service);
                                                     <br /><br /> 1.2.11. a "Payout" is the periodic deposit to your Balance, dependent on your Cloud Machine. Simplerigs may change the periodicity of Payouts at any time, to a maximum of once per 24 hours;
@@ -965,6 +977,7 @@ const Terms = () => {
                 <MobSidebar SidbarTitle="Terms" NavigationLink="/terms" MobileSidebar={MobileSidebar} setMobileSidebar={setMobileSidebar} />
             }
         </>
+        </DocumentMeta>
     )
 }
 

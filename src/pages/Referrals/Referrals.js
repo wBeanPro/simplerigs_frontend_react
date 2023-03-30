@@ -26,7 +26,7 @@ const Referrals = () => {
     const [referLink, setReferLink] = useState();
     const [walletAddress, setWalletAddress] = useState();
     const [withdrawModalShow, setWithdrawModalShow] = useState(false);
-    const [withdrawHistory, setWithdrawHistory] = useState([]);
+    const [referralHistory, setReferralHistory] = useState([]);
     const [clickCount, setClickCount] = useState(0);
     const [totalBalance, setTotalBalance] = useState(0);
     const [referalBalance, setReferalBalance] = useState(0);
@@ -68,26 +68,33 @@ const Referrals = () => {
                 setClickCount(response.data.click);
                 setSignUpCount(response.data.signup);
                 setIncome(response.data.income);
+                setReferralHistory([]);
+                for(var i = 0; i < response.data.list.length; i++){
+                    let name = response.data.list[i].first_name + " " + response.data.list[i].last_name;
+                    let price = response.data.list[i].price * 0.1;
+                    let date = new Date(response.data.list[i].login_date);
+                    setReferralHistory(state => [...state, { 'name': name, "price": price, "date": date.toLocaleDateString() }]);
+                }
+                // setReferralHistory(referralHistory);
+                // console.log(referralHistory);
             })
             .catch((error) => {
-                if (error.response.status === 500) {
-
-                }
+                console.log(error);
             });
 
-        axios.post(process.env.REACT_APP_API_HOST + 'api/getWithdrawTransaction', data)
-            .then((response) => {
-                for (var i = 0; i < response.data.length; i++) {
-                    let amount = response.data[i].amount;
-                    let address = response.data[i].address;
-                    let date = new Date(response.data[i].date);
-                    setWithdrawHistory(state => [...state, { 'amount': amount, "address": address, "date": date.toLocaleDateString() }])
-                }
-            })
-            .catch((error) => {
-                if (error.response.status === 500) {
-                }
-            });
+        // axios.post(process.env.REACT_APP_API_HOST + 'api/getWithdrawTransaction', data)
+        //     .then((response) => {
+        //         for (var i = 0; i < response.data.length; i++) {
+        //             let amount = response.data[i].amount;
+        //             let address = response.data[i].address;
+        //             let date = new Date(response.data[i].date);
+        //             setReferralHistory(state => [...state, { 'amount': amount, "address": address, "date": date.toLocaleDateString() }])
+        //         }
+        //     })
+        //     .catch((error) => {
+        //         if (error.response.status === 500) {
+        //         }
+        //     });
 
         axios.get(process.env.REACT_APP_API_HOST + 'api/getWalletAddress/' + user_id)
             .then((response) => {
@@ -218,7 +225,7 @@ const Referrals = () => {
                                     </div>
                                     <div className='w-full'>
                                         <div className='lg:block flex items-center justify-between lg:mb-[0px] mb-[20px]'>
-                                            <p className='font-[600] lg:font-[400] text-[#595A5B] text-[22px] lg:text-[1vw] mb-[0px]'>Previous transactions</p>
+                                            <p className='font-[600] lg:font-[400] text-[#595A5B] text-[22px] lg:text-[1vw] mb-[0px]'>Previous Referral</p>
                                             <img src={WithdrawScrollIcon} alt="Withdraw Scroll Icon" className='lg:hidden block w-[24px] h-[24px]' />
                                         </div>
 
@@ -226,27 +233,27 @@ const Referrals = () => {
                                             <div className='revenue_header lg:block hidden font-Rajdhani text-[95%] font-[600] pl-[2.5vw] py-[1vh]'>
                                                 <div className='w-[full] pr-[2.2vw] uppercase grid grid-cols-6'>
                                                     <p className='col-span-2'>DATE</p>
-                                                    <p className='col-span-3'>Wallet Address</p>
+                                                    <p className='col-span-3'>User Name</p>
                                                     <p className='col-span-1'>AMOUNT</p>
                                                 </div>
                                             </div>
 
                                             {
-                                                withdrawHistory.length
+                                                referralHistory.length
                                                     ?
                                                     <>
                                                         {/* Desktop Withdraw History */}
                                                         <div className='lg:flex hidden font-montserrat text-[95%] pr-[1vw] font-[600] pl-[2.5vw] py-[1vh]'>
                                                             <div className='overflow-y-scroll w-full pr-[1vw] h-[26vh] text-[#4B4B4B] text-[95%]'>
                                                                 {
-                                                                    withdrawHistory.map((item, i) => {
+                                                                    referralHistory.map((item, i) => {
                                                                         return (
                                                                             <>
                                                                                 <div className='revenue_mining_detail w-full py-[1.2vh] grid grid-cols-6' key={i}>
                                                                                     <p className='col-span-2 font-[300]'>{item.date}</p>
-                                                                                    <p className='col-span-3 font-[500] text-[80%]'>{item.address}</p>
+                                                                                    <p className='col-span-3 font-[500] text-[80%]'>{item.name}</p>
                                                                                     {/* <p className='col-span-1 font-[700]'>{toFixed(Number(Number(item.amount).toFixed(8)))} BTC</p> */}
-                                                                                    <p className='col-span-1 font-[700]'>{item.amount} BTC</p>
+                                                                                    <p className='col-span-1 font-[700]'>{Number(item.price.toFixed(6))} BTC</p>
                                                                                 </div>
                                                                             </>
                                                                         )
@@ -256,7 +263,7 @@ const Referrals = () => {
                                                         </div>
                                                         <div className='space-y-[20px] lg:hidden block'>
                                                             {
-                                                                withdrawHistory.map((item, i) => {
+                                                                referralHistory.map((item, i) => {
                                                                     return (
                                                                         <>
                                                                             {/* Mobile Withdraw History */}
@@ -271,10 +278,10 @@ const Referrals = () => {
                                                                                         <div className='w-full'>
                                                                                             <div className='flex justify-between text-[13px] mb-[15px]'>
                                                                                                 <p className='mb-[0px] font-[400]'>{item.date}</p>
-                                                                                                <p className='mb-[0px] font-[700]'>{item.amount} BTC</p>
+                                                                                                <p className='mb-[0px] font-[700]'>{Number(item.price.toFixed(6))} BTC</p>
                                                                                             </div>
-                                                                                            <p className='font-[500] text-[11px] font-Rajdhani mb-[5px]'>Wallet Address</p>
-                                                                                            <p className='font-[500] text-[11px] mb-[0px]'>{item.address}</p>
+                                                                                            <p className='font-[500] text-[11px] font-Rajdhani mb-[5px]'>User Name</p>
+                                                                                            <p className='font-[500] text-[11px] mb-[0px]'>{item.name}</p>
                                                                                         </div>
                                                                                     </div>
 
@@ -289,7 +296,7 @@ const Referrals = () => {
                                                     :
                                                     <div className='flex flex-col items-center text-center justify-center w-full mt-[20px] lg:mt-[0px] lg:h-[276.69px] font-montserrat'>
                                                         <img src={NoAssets} alt="No Assets" className='w-[45px] h-[60px] lg:w-[3.8vw] lg:h-[10vh]' />
-                                                        <p className='text-[#7F7F7F] text-[18px] lg:text-[1vw] font-[500] mt-[2vh] mb-0'>You don’t have any previous<br />transactions yet</p>
+                                                        <p className='text-[#7F7F7F] text-[18px] lg:text-[1vw] font-[500] mt-[2vh] mb-0'>You don’t have any referral<br /></p>
                                                     </div>
                                             }
                                         </div>

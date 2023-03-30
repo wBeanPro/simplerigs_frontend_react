@@ -48,7 +48,7 @@ const Navbar = () => {
                 <div className="mr-auto">
                     <p className="mb-[0] text-[30px] lg:text-[3vw] font-[700]">SIMPLE&nbsp;<span className='text-[#449552]'>RIGS</span>&nbsp;</p>
                     <div className='sm:text-left text-center'>
-                        <p className='text-[15px] sm:text-[23px] font-Rajdhani mb-[0]'>THE <a href='https://simplerigs.com'>CLOUD MINING</a> COMPANY</p>
+                        <p className='text-[15px] sm:text-[23px] font-Rajdhani mb-[0]'>THE <a href='https://www.simplerigs.com'>CLOUD MINING</a> COMPANY</p>
                     </div>
                 </div>
 

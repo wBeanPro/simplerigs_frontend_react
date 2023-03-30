@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import DocumentMeta from 'react-document-meta';
 import { Link } from 'react-router-dom'
 import { Slider } from "@mui/material"
 import axios from 'axios';
@@ -113,6 +114,17 @@ const Home = () => {
         setSlideValue(e.target.value);
         dispatch(setSliderValueFor(e.target.value));
     }
+    const meta = {
+        title: 'Legit & Trusted Crypto Cloud Mining Service - Simple Rigs',
+        description: 'Simple Rigs - we offer cryptocurrency cloud mining services that trusted and legit. Start earning through cloud mining with daily payout',
+        canonical: 'https://www.simplerigs.com',
+        meta: {
+          charset: 'utf-8',
+          name: {
+            h1: 'Simple Rigs - Your Trusted Cloud Mining Service',
+          }
+        }
+      };
     // const LearnMoreChange = (value) => {
     //     setSlideValue(value);
     //     dispatch(setSliderValueFor(value));
@@ -155,7 +167,7 @@ const Home = () => {
         });
     },[BTCPrice])
     
-  return (
+  return (<DocumentMeta {...meta}>
     <>
         {/* Hero Section */}
         
@@ -169,13 +181,13 @@ const Home = () => {
                 <div className='sm:hidden flex relative justify-center items-center w-full'>
                     <img src={MobileHomeBack} width='540' height='387' alt="crypto cloud mining" className='w-[90%] drop-shadow-[0px_0px_44px_rgba(0,0,0,0.25)]' />
                     <p className='mb-0 leading-[22px] absolute text-center font-Rajdhani font-[600] mt-[-55px]'>
-                    We offer the easiest <a href='https://simplerigs.com'>cloud mining</a><br /> process on cutting edge<br /> technology equipment
+                    We offer the easiest cloud mining<br /> process on cutting edge<br /> technology equipment
                     </p>
                 </div>
                 <div className="hidden sm:block pr-[5vw] pl-[1vw] w-[45%] font-montserrat">
                     <h2 className="text-[1.5vw] font-[700]"><span className='text-[#449552]'>Easy</span> way to start cryptomining</h2>
                     <h2 className="text-[1.5vw] font-[700]"> Your Key to <span className='text-[#449552]'>success</span></h2>
-                    <p className='text-[0.8vw] mt-[0.5vh]'>Bitcoin and several other cryptocurrencies mining - the competitive process that verifies and adds new transactions to the blockchain for a cryptocurrency that uses the proof-of-work (PoW) method. The miner that wins the competition is rewarded with some amount of the currency and/or transaction fees. Regular mining requires certain knowledge, know-how and large starting investments. Moreover, all these software and hardware settings are not that easy. That's why we've decided to make it simple with crypto cloud mining, a trusted cloud mining site that provides advanced <a href='https://simplerigs.com'>cloud mining</a> services. Our cloud mining provider offers real, safe, and trustworthy online solutions to simplify the mining process.</p>
+                    <p className='text-[0.8vw] mt-[0.5vh]'>Bitcoin and several other cryptocurrencies mining - the competitive process that verifies and adds new transactions to the blockchain for a cryptocurrency that uses the proof-of-work (PoW) method. The miner that wins the competition is rewarded with some amount of the currency and/or transaction fees. Regular mining requires certain knowledge, know-how and large starting investments. Moreover, all these software and hardware settings are not that easy. That's why we've decided to make it simple with crypto cloud mining, a trusted cloud mining site that provides advanced cloud mining services. Our cloud mining provider offers real, safe, and trustworthy online solutions to simplify the mining process.</p>
 
                     <p className='text-[0.8vw] mt-[0.5vh]'>Overall, if you're looking for a legitimate and secure cloud mining provider, our cryptocurrency cloud mining services are a great choice. With our cloud-based crypto mining platform, users can mine cryptocurrencies without having to worry about the hassle and expense of managing hardware, making it a convenient and accessible option for anyone looking to get started with cryptocurrency mining.</p>
 
@@ -205,7 +217,7 @@ const Home = () => {
             <div className="flex items-center justify-center">
                     {/* 3 Step instruction */}
                 <div className="font-montserrat w-[90%] lg:w-[55%] md:w-[80%] mt-[-120px] md:mt-[-60px]  items-center text-center justify-center bg-[#fff] rounded-[20px] z-10 shadow-[0px_4px_44px_rgb(0,0,0,0.15)]">
-                    <h1 className='text-[20px] md:text-[2vw] mt-[35px] md:mt-[1.8vh] font-[600]'>EASY 1-2-3 STEP INSTRUCTION</h1>
+                    <h2 className='text-[20px] md:text-[2vw] mt-[35px] md:mt-[1.8vh] font-[600]'>EASY 1-2-3 STEP INSTRUCTION</h2>
                     <div className='flex flex-col md:flex-row items-center justify-between mt-[3vh] px-[3vw] pb-[3vh]'>
                         <div className='w-full md:w-[30%] lg:w-[26%] flex flex-col items-center justify-between'>
                             <img src={Mining} width='138' height='142' alt="mining" />
@@ -300,9 +312,9 @@ const Home = () => {
                             </div>
                             <div className='flex justify-end lg:gap-4 gap-2 w-[70%] lg:h-auto md:h-[180px] h-[140px] lg:w-[70%]'>
                                 <div className="flex flex-col justify-between place-items-end h-full text-[#fff] basis-[60%] lg:basis-[60%]">
-                                    <h1 className='mb-0 text-[33px] lg:text-[2.2vw] font-[800] lg:font-[700]'>{investors}</h1>
-                                    <h1 className='mb-0 text-[33px] lg:text-[2.2vw] font-[800] lg:font-[700]'>1.12X</h1>
-                                    <h1 className='mb-0 text-[33px] lg:text-[2.2vw] font-[800] lg:font-[700]'>${investAmount}</h1>
+                                    <p className='mb-0 text-[33px] lg:text-[2.2vw] font-[800] lg:font-[700]'>{investors}</p>
+                                    <p className='mb-0 text-[33px] lg:text-[2.2vw] font-[800] lg:font-[700]'>1.12X</p>
+                                    <p className='mb-0 text-[33px] lg:text-[2.2vw] font-[800] lg:font-[700]'>${investAmount}</p>
                                 </div>
 
                                 <div className="flex flex-col justify-between text-left text-[#fff] h-full lg:basis-[40%] basis-[40%]">
@@ -541,7 +553,7 @@ const Home = () => {
                         </div>
                         <div className=" font-montserrat text-[#BAC68E] md:mt-0 mt-[30px]">
                             <span className='text-[25px] mb-0'>SIMPLE<span className='text-[#449552]'>RIGS</span></span>
-                            <p className='text-[13px]'>THE <a href='https://simplerigs.com'>CLOUD MINING</a> COMPANY</p>
+                            <p className='text-[13px]'>THE CLOUD MINING COMPANY</p>
                             <p className='mb-[6px] text-[12px] md:mt-0 mt-[30px]'>Contact us 24/7 using</p>
                             <p className='mb-[6px] text-[12px]'>live chat or via support@simplerigs.com</p>
                             <p className='mb-[6px] text-[12px]'>CR NO. 2576021 date of incorporation: 2017-sep-07</p>
@@ -569,6 +581,7 @@ const Home = () => {
             
             <LoginModal/>
     </>
+    </DocumentMeta>
   )
 }
 

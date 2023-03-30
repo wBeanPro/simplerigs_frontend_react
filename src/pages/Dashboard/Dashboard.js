@@ -344,32 +344,34 @@ const Dashboard = () => {
                                 <div className="flex flex-col justify-between relative bg-[#FFFFFF] bg-opacity-[60%] rounded-[20px] lg:pt-[4vh] lg:pl-[2vw] lg:pb-[4vh] lg:pr-[3vw] py-[20px] px-[20px] shadow-[0px_0px_44px_rgba(0,0,0,0.1)]">
                                     <div className="plan-container font-montserrat rounded-[20px]">
                                         <div className='flex justify-between items-center font-montserrat lg:font-Rajdhani w-full lg:w-[23vw] pl-[0.5vw] pr-[0.8vw] mb-[1vh]'>
-                                            <h3 className='lg:block hidden text-[#000000] lg:text-[#595A5B] text-[20px] lg:text-[95%] font-[500] lg:font-[400] mb-[0px]'>My Assets</h3>
-                                            <h3 className='lg:hidden block text-[#000000] lg:text-[#595A5B] text-[20px] lg:text-[95%] font-[500] lg:font-[400] mb-[0px]'>MY ASSETS</h3>
+                                            <h3 className='lg:block hidden text-[#000000] lg:text-[#595A5B] text-[20px] lg:text-[100%] font-[600]  mb-[0px]'>My Assets</h3>
+                                            <h3 className='lg:hidden block text-[#000000] lg:text-[#595A5B] text-[20px] lg:text-[100%] font-[600]  mb-[0px]'>MY ASSETS</h3>
                                             {plansData.length > 0 ?
-                                                <h3 className='text-[#000000] lg:text-[#595A5B] text-[14px] lg:text-[95%] font-[500] lg:font-[400] underline cursor-pointer mb-[0px]' onClick={showPlanListModal}>View All</h3>
+                                                <h3 className='text-[#000000] lg:text-[#595A5B] text-[14px] lg:text-[100%] font-[600]  underline cursor-pointer mb-[0px]' onClick={showPlanListModal}>View All</h3>
                                                 :
-                                                <h3 className='lg:block hidden text-[#000000] lg:text-[#595A5B] text-[14px] lg:text-[95%] font-[500] lg:font-[400] underline cursor-pointer mb-[0px]' onClick={showPlanListModal}>View All</h3>
+                                                <h3 className='lg:block hidden text-[#000000] lg:text-[#595A5B] text-[14px] lg:text-[100%] font-[600]  underline cursor-pointer mb-[0px]' onClick={showPlanListModal}>View All</h3>
                                             }
                                         </div>
                                         <div className='flex lg:flex-row flex-col lg:space-x-[1.5vw] space-y-[1.5vh]'>
                                             <div className="lg:shadow-[0px_0px_44px_rgba(0,0,0,0.1)] w-full h-full py-[5px] pr-[0.8vw] lg:w-[25vw] rounded-[20px] lg:bg-[#ffffff] lg:bg-opacity-[60%]">
-                                                <div className="flex flex-col w-full pr-[10px] pl-[10px] lg:h-[29vh] py-[15px] lg:overflow-y-scroll">
+                                                <div className="flex flex-col w-full pr-[10px] pl-[10px] lg:h-[30vh] py-[15px] ">
 
                                                     {plansData.length > 0 ?
                                                         <>
                                                             <div className='lg:block hidden w-full space-y-[1vh]'>
                                                                 {
-                                                                    plansData.slice(0, 4).map((plan, index) =>
+                                                                    plansData.slice().reverse().slice(0, 4).map((plan, index) =>
+                                                                        //{//index < 5 ?
                                                                         <>
                                                                             {/* <Plans data={plan} key={index} /> */}
-                                                                            <div className='flex items-center w-[50%] lg:w-full h-[6vh] px-[20px] grid grid-cols-10 rounded-[10px] lg:shadow-[0px_4px_44px_rgba(0,0,0,0.1)] lg:bg-[#ffffff] lg:bg-opacity-[30%] text-[11px]' style={{background: `${selectedMiner===index ? '#8bd66c' : 'white'}` }} key={index}>
+                                                                            <div className='flex items-center w-[50%] lg:w-full h-[6vh] px-[20px] grid grid-cols-10 rounded-[10px] lg:shadow-[0px_4px_44px_rgba(0,0,0,0.1)] lg:bg-[#ffffff] lg:bg-opacity-[30%] text-[13px]' style={{background: `${selectedMiner===index ? '#8bd66c' : 'white'}` }} key={index}>
                                                                                 <p className='col-span-3 mb-0 font-[500]'>Miner {plan.no}</p>
                                                                                 <p className='col-span-3 mb-0 font-[500]'>{plan.deposit_date}</p>
                                                                                 <p className='col-span-3 mb-0 font-[700]'>{Number(plan.balance.toFixed(6))}</p>
                                                                                 <IoEllipsisHorizontalCircle className='cursor-pointer w-[20px] h-[20px]' onClick={() => setPlanListShow(index)} />
                                                                             </div>
-                                                                        </>
+                                                                        </>//:<></>
+                                                                        //}
                                                                     )
                                                                 }
                                                             </div>
@@ -377,7 +379,7 @@ const Dashboard = () => {
                                                             <div className='lg:hidden flex justify-between w-full gap-[10px] grid grid-cols-2 divide-x'>
                                                                 {
                                                                     plansData.slice(0, 4).map((plan, index) =>
-                                                                        <div className='items-center items-center space-y-[15px] border-none w-full py-[15px] px-[15px] rounded-[10px] shadow-[0px_0px_14px_rgba(0,0,0,0.2)] bg-[#ffffff] bg-opacity-[60%] text-[11px]' key={index}>
+                                                                        <div className='items-center items-center space-y-[15px] border-none w-full py-[15px] px-[15px] rounded-[10px] shadow-[0px_0px_14px_rgba(0,0,0,0.2)] bg-[#ffffff] bg-opacity-[60%] text-[13px]' key={index}>
                                                                             <div className="flex justify-between items-center">
                                                                                 <p className='mb-0 font-[500]'>Miner {plan.no}</p>
                                                                                 <IoEllipsisHorizontalCircle className='cursor-pointer w-[20px] h-[20px] mt-[0px]' onClick={() => setPlanListShow(index)} />
@@ -402,7 +404,7 @@ const Dashboard = () => {
                                             <div className="flex flex-col w-full lg:w-[60%]">
                                                 <div className='shadow-[0px_5px_14px_rgba(0,0,0,0.15)] flex flex-col w-full lg:w-[26vw] space-y-[1vh] bg-[#C9E8BF] rounded-[10px] py-[12px] px-[17px] lg:pt-[1.5vh] lg:pb-[1.5vh] lg:pl-[1.5vw] text-[#4B4B4B] lg:font-montserrat font-Rajdhani text-[15px] lg:text-[90%] font-[600] lg:font-[700] leading-[2.5vh] lg:leading-[1.8vh]'>
                                                     <p className='mb-0'>Total Balance: {toFixed(Number(Number(totalBalance).toFixed(3)))} BTC</p>
-                                                    <p>Referral Balance: {toFixed(Number(Number(referalBalance).toFixed(3)))} BTC</p>
+                                                    <p>Referral Reward Earned: {toFixed(Number(Number(referalBalance).toFixed(6)))} BTC</p>
                                                     <p>1 BTC = $ {toFixed(Number(Number(BTCPrice).toFixed(3)))}</p>
                                                     <p className='text-[13px] lg:text-[90%] font-[400]'>Bitcoin price has all conversation rate fees included</p>
                                                 </div>
@@ -637,7 +639,7 @@ const Dashboard = () => {
             }
 
             {planlistSliderShow &&
-                <div className="flex justify-end items-center z-[100] top-0 w-full h-full fixed bg-[#000] bg-opacity-[30%]" onClick={setPlanListSliderSetting} id='scroll'>
+                <div className="flex justify-end items-center z-[100] top-0 w-full h-[100vh] md:h-full fixed bg-[#000] bg-opacity-[30%]" onClick={setPlanListSliderSetting} id='scroll'>
                     <animated.div style={sliderAnimation} className="font-rajdhani h-[100vh]">
                         <div className='relative flex flex-col md:justify-between w-[100vw] h-[100vh] lg:w-[27vw] h-100 lg:overflow-y-scroll pt-[12px] pb-[1vh] px-[12px] lg:pl-[0.8vw] lg:pr-[0.5vw] lg:py-[1vh] md:px-[60px] bg-[#fff] lg:rounded-l-[20px] font-montserrat bg-[url("../src/assets/images/deposit_slider_back.png")] bg-no-repeat bg-bottom bg-[length:100%_45vh]' onClick={handleClickEvent}>
 
