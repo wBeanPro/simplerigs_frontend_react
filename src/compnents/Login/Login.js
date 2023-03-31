@@ -91,7 +91,7 @@ const Login = ({closeLoginModal}) => {
                             <input type="email" value={email} placeholder="Enter Your email" className='w-full px-[20px] py-[13px] md:py-[19px] text-[15px] font-[200] rounded-[10px] md:text-center text-left md:h-[66px] focus:outline-[#449552]' autocomplete="false" onChange={(e) => setEmail(e.target.value)} required/>
                         </div>
                         <div className="md:mt-0 mt-[20px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)] rounded-[10px]">
-                            <input type="password" autocomplete="false" placeholder="Enter Your password"  value={password} className='w-full px-[20px] py-[13px] md:py-[19px] text-left md:text-center text-[15px] font-[200] rounded-[10px] md:h-[66px] focus:outline-[#449552]' onChange={(e) => setPassword(e.target.value)} required/>
+                            <input type="password" autocomplete="false" placeholder="Enter Your password"  value={password} className='w-full px-[20px] py-[13px] md:py-[19px] text-left md:text-center text-[15px] font-[200] tracking-widest rounded-[10px] md:h-[66px] focus:outline-[#449552]' onChange={(e) => setPassword(e.target.value)} required/>
                         </div>
                         <div className="flex justify-between items-center md:mt-0 mt-[2vh]">
                             <label htmlFor="forgetpassoword" onClick={onForgotPassword} className="font-Rajdhani text-[#1E9E39] font-[600] text-[15px] cursor-pointer">Forgot Password?</label>
@@ -104,7 +104,7 @@ const Login = ({closeLoginModal}) => {
                 </div>
 
                 <div className='w-full md:mt-0 mt-[2vh] md:w-[40%]'>
-                    <button onClick={changeModal} className='w-full items-center bg-[#449552] border-[2px] border-[#449552] rounded-[10px] text-[#fff] text-[20px] font-[600] py-[12px] md:py-[17px] px-[40px] hover:bg-opacity-70 transition duration-300 font-Rajdhani shadow-[0px_4px_4px_rgb(0,0,0,0.25)]'>Sign up for free</button>
+                    <button onClick={changeModal} className='w-full items-center bg-[#449552] border-[2px] border-[#449552] rounded-[10px] text-[#fff] text-[20px] font-[600] py-[12px]  px-[40px] hover:bg-opacity-70 transition duration-300 font-Rajdhani shadow-[0px_4px_4px_rgb(0,0,0,0.25)]'>Sign up for free</button>
                 </div>
 
                 <div className='md:hidden block w-full md:mt-0 mt-[2vh] md:w-[40%]'>

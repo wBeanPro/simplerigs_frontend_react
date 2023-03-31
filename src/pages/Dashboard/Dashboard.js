@@ -71,7 +71,7 @@ const Dashboard = () => {
     const [sliderValue, setSliderValue] = useState({});
 
     const modalRef = useRef();
-
+    const [emptyArray, setEmptyArray] = useState([1,2,3,4,5,6,7,8]);
     var chartData;
 
     const loginStatus = localStorage.getItem('logged_in');
@@ -173,6 +173,8 @@ const Dashboard = () => {
         axios.post(process.env.REACT_APP_API_HOST + 'api/getPlanList', data)
             .then((response) => {
                 if (response.data.length > 0) {
+                    if(response.data.length % 2 == 1) setEmptyArray([1,2,3,4,5,6,7])
+                    else setEmptyArray([1,2,3,4,5,6,7,8])
                     for (var i = 0; i < response.data.length; i++) {
                         const plan_name = response.data[i].plan_name;
                         const balance = response.data[i].deposit_price;
@@ -354,13 +356,13 @@ const Dashboard = () => {
                                         </div>
                                         <div className='flex lg:flex-row flex-col lg:space-x-[1.5vw] space-y-[1.5vh]'>
                                             <div className="lg:shadow-[0px_0px_44px_rgba(0,0,0,0.1)] w-full h-full py-[5px] pr-[0.8vw] lg:w-[25vw] rounded-[20px] lg:bg-[#ffffff] lg:bg-opacity-[60%]">
-                                                <div className="flex flex-col w-full pr-[10px] pl-[10px] lg:h-[30vh] py-[15px] ">
+                                                <div className="flex flex-col w-full pr-[10px] pl-[10px] lg:h-[30vh] py-[15px] overflow-y-scroll">
 
                                                     {plansData.length > 0 ?
                                                         <>
                                                             <div className='lg:block hidden w-full space-y-[1vh]'>
                                                                 {
-                                                                    plansData.slice().reverse().slice(0, 4).map((plan, index) =>
+                                                                    plansData.slice().reverse().map((plan, index) =>
                                                                         //{//index < 5 ?
                                                                         <>
                                                                             {/* <Plans data={plan} key={index} /> */}
@@ -374,11 +376,21 @@ const Dashboard = () => {
                                                                         //}
                                                                     )
                                                                 }
+                                                                {
+                                                                    emptyArray.map((item, index) =>
+                                                                        <>
+                                                                            <div className='flex  justify-start items-center w-[50%] lg:w-full h-[6vh] px-[20px]  rounded-[10px] lg:shadow-[0px_4px_44px_rgba(0,0,0,0.1)] bg-[#ffffff] text-[13px]'  key={index}>
+                                                                                <img src={NoAssets} alt="No Assets" className='h-[80%] mr-[20px]' />
+                                                                                <p className='text-[#7F7F7F] text-[95%] font-[500] ml-[20px] mb-0'>Empty Slot</p>
+                                                                            </div>
+                                                                        </>
+                                                                    )
+                                                                }
                                                             </div>
 
                                                             <div className='lg:hidden flex justify-between w-full gap-[10px] grid grid-cols-2 divide-x'>
                                                                 {
-                                                                    plansData.slice(0, 4).map((plan, index) =>
+                                                                    plansData.slice().reverse().map((plan, index) =>
                                                                         <div className='items-center items-center space-y-[15px] border-none w-full py-[15px] px-[15px] rounded-[10px] shadow-[0px_0px_14px_rgba(0,0,0,0.2)] bg-[#ffffff] bg-opacity-[60%] text-[13px]' key={index}>
                                                                             <div className="flex justify-between items-center">
                                                                                 <p className='mb-0 font-[500]'>Miner {plan.no}</p>
@@ -387,6 +399,16 @@ const Dashboard = () => {
                                                                             <p className='mb-0 font-[500]'>{plan.deposit_date}</p>
                                                                             <p className='mb-0 font-[700]'>{Number(plan.balance.toFixed(6))}</p>
                                                                         </div>
+                                                                    )
+                                                                }
+                                                                {
+                                                                    emptyArray.map((item, index) =>
+                                                                        <>
+                                                                            <div className='flex items-center flex-col justify-center items-center space-y-[15px] border-none w-full py-[15px] px-[15px] rounded-[10px] min-h-[119px] shadow-[0px_0px_14px_rgba(0,0,0,0.2)] bg-[#ffffff] bg-opacity-[60%] text-[13px]'  key={index}>
+                                                                                <img src={NoAssets} alt="No Assets" className='w-[30%] ' />
+                                                                                <p className='text-[#7F7F7F] text-[95%] font-[500]  mb-0'>Empty Slot</p>
+                                                                            </div>
+                                                                        </>
                                                                     )
                                                                 }
                                                             </div>
@@ -536,9 +558,9 @@ const Dashboard = () => {
             {
                 planlistModalShow ?
                     <div className="flex justify-center items-center z-50 top-0 w-full h-full fixed bg-[#000] bg-opacity-[30%]" id='scroll' onClick={ClosePlanListModal} ref={modalRef}>
-                        <animated.div style={animation} className="font-montserrat w-[95%] lg:w-[75%] h-[96%] lg:h-full flex lg:flex-row flex-col justify-between lg:justify-center items-center">
+                        <animated.div style={animation} className="font-montserrat w-[95%] lg:w-[75%] h-[96%] lg:h-full flex lg:flex-row flex-col  lg:justify-center items-center">
 
-                            <div className='lg:hidden flex justify-between items-center w-full py-[8px] pl-[25px] pr-[8px] bg-[#ffffff] rounded-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
+                            <div className='lg:hidden flex justify-between items-center w-full py-[8px] pl-[25px] pr-[8px] bg-[#ffffff] rounded-t-[10px] shadow-[0px_0px_24px_rgba(0,0,0,0.1)]'>
                                 <div className='flex items-center space-x-[18px]'>
                                     <div onClick={CloseToIcon} className='block w-[12px] h-[12px] border-b-[2px] border-r-[2px] border-[#292D32] rotate-[135deg]'></div>
                                     <p onClick={CloseToIcon} className='font-[500] text-[18px] font-Rajdhani mb-0'>Dashboard</p>
@@ -554,7 +576,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
 
-                            <div className='planListmodal relative w-full px-[22px] py-[20px] lg:pt-[85px] lg:pb-[50px] px-[2.5vw] bg-[#fff] rounded-[10px] lg:rounded-[20px]'>
+                            <div className='planListmodal relative w-full lg:px-[22px] py-[20px] lg:pt-[85px] lg:pb-[50px] px-[2.5vw] bg-[#fff] rounded-b-[10px] lg:rounded-[20px]'>
                                 <div className="lg:grid hidden planmodal_header px-[80px] grid-cols-11 mb-[20px]">
                                     <p className='col-span-3'>Miner #</p>
                                     <p className='col-span-3'>Date of Purchase</p>
@@ -563,20 +585,33 @@ const Dashboard = () => {
                                 </div>
                                 <p className="mb-[0px] text-[20px] lg:hidden block font-[500] font-Rajdhani" >MY ASSETS</p>
                                 {plansData.length > 0 ?
-                                    <div className='shadow-[0px_0px_14px_rgba(0,0,0,0.1)] bg-no-repeat bg-[length:100%_80%] bg-bottom bg-[url("../src/assets/images/deposit_slider_back.png")] lg:bg-none lg:bg-[#ececec] bg-opacity-60 items-center px-[1vw] lg:px-[0.5vw] py-[1vh] rounded-[20px] text-[90%]'>
-                                        <div className="h-[65vh] lg:h-[50vh] space-y-[2vh] overflow-y-scroll px-[1vw] lg:pr-[0.5vw]">
+                                    <div className='lg:shadow-[0px_0px_14px_rgba(0,0,0,0.1)] bg-no-repeat bg-[length:100%_80%] bg-bottom bg-[url("../src/assets/images/deposit_slider_back.png")] lg:bg-none lg:bg-[#ececec] bg-opacity-60 items-center px-[1vw] lg:px-[0.5vw] py-[1vh] rounded-[20px] text-[90%]'>
+                                        <div className="h-[78vh] lg:h-[50vh] space-y-[2vh] overflow-y-scroll px-[1vw] lg:pr-[0.5vw]">
                                             {
-                                                plansData.map((plan, index) =>
+                                                plansData.slice().reverse().map((plan, index) =>
                                                     <>
-                                                        <div className='lg:grid hidden items-center w-full h-[13%] px-[62px] grid-cols-11 rounded-[10px] bg-[#ffffff] shadow-[0px_4px_44px_rgba(0,0,0,0.1)] text-[#4B4B4B]' key={index}>
+                                                        <div className='lg:grid hidden items-center w-full h-[13%] px-[62px] grid-cols-11 rounded-[10px] bg-[#ffffff] shadow-[0px_4px_44px_rgba(0,0,0,0.1)] text-[#4B4B4B]' style={{background: `${selectedMiner===index ? '#8bd66c' : 'white'}` }} key={index}>
                                                             <p className='col-span-3 mb-[0px] font-[500]'>Miner {plan.no}</p>
                                                             <p className='col-span-3 mb-[0px] font-[500]'>{plan.deposit_date}</p>
                                                             <p className='col-span-2 mb-[0px] font-[700]'>{Number(plan.balance.toFixed(6))}</p>
                                                             <p className='col-span-2 mb-[0px] font-[500]'>{plan.power}</p>
                                                             <IoEllipsisHorizontalCircle className='justify-end cursor-pointer col-span-1 w-[20px] h-[20px]' onClick={() => setPlanListShow(index)} />
                                                         </div>
-
-                                                        <div className='lg:hidden block items-center w-full px-[12px] py-[12px] space-y-[12px] rounded-[10px] bg-opacity-[40%] lg:bg-opacity-none bg-[#ffffff] shadow-[0px_4px_44px_rgba(0,0,0,0.1)] text-[#4B4B4B]' key={index}>
+                                                    </>
+                                                )
+                                                
+                                            }
+                                            {
+                                                emptyArray.map((item, index) =>
+                                                    <>
+                                                        <div className='lg:flex  hidden justify-start items-center w-full h-[13%] px-[62px]  rounded-[10px] lg:shadow-[0px_4px_44px_rgba(0,0,0,0.1)] bg-[#ffffff] text-[13px]'  key={index}>
+                                                            <img src={NoAssets} alt="No Assets" className='h-[80%] mr-[20px]' />
+                                                            <p className='text-[#7F7F7F] text-[95%] font-[500] ml-[20px] mb-0'>Empty Slot</p>
+                                                        </div>
+                                                    </>
+                                                )
+                                            }
+                                                        {/* <div className='lg:hidden block items-center w-full px-[12px] py-[12px] space-y-[12px] rounded-[10px] bg-opacity-[40%] lg:bg-opacity-none bg-[#ffffff] shadow-[0px_4px_44px_rgba(0,0,0,0.1)] text-[#4B4B4B]' >
                                                             <div className="flex justify-between">
                                                                 <div className="space-y-[5px]">
                                                                     <p className='mb-[0px] text-[10px] font-[500] font-Rajdhani md:font-montserrat'>Miner #</p>
@@ -604,10 +639,45 @@ const Dashboard = () => {
                                                                 <div>
                                                                 </div>
                                                             </div>
+                                                        </div> */}
+                                            <div className='lg:hidden flex justify-between w-full gap-[10px] grid grid-cols-2 divide-x'>
+                                                {
+                                                    plansData.slice().reverse().map((plan, index) =>
+                                                        <div className='items-center items-center space-y-[15px] border-none w-full py-[15px] px-[15px] rounded-[10px] shadow-[0px_0px_9px_rgba(0,0,0,0.2)] bg-[#ffffff] bg-opacity-[60%] text-[13px]' key={index}>
+                                                            <div className="flex justify-between items-center">
+                                                                <p className='mb-0 font-[500]'>Miner {plan.no}</p>
+                                                                <IoEllipsisHorizontalCircle className='cursor-pointer w-[20px] h-[20px] mt-[0px]' onClick={() => setPlanListShow(index)} />
+                                                            </div>
+                                                            <p className='mb-0 font-[500]'>{plan.deposit_date}</p>
+                                                            <div className="flex justify-between">
+                                                                <div className="space-y-[5px]">
+                                                                    <p className='mb-[0px] text-[10px] font-[700]'>{Number(plan.balance.toFixed(4))} BTC</p>
+                                                                </div>
+
+                                                                <div className="space-y-[5px]">
+                                                                    <p className='mb-[0px] text-[10px] font-[500]'>{plan.power} GHS</p>
+                                                                </div>
+
+                                                                <div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </>
-                                                )
-                                            }
+                                                    )
+                                                }
+                                                {
+                                                    emptyArray.map((item, index) =>
+                                                        <>
+                                                            <div className='flex items-center flex-col justify-center items-center space-y-[15px] border-none w-full py-[15px] px-[15px] rounded-[10px] min-h-[119px] shadow-[0px_0px_14px_rgba(0,0,0,0.2)] bg-[#ffffff] bg-opacity-[60%] text-[13px]'  key={index}>
+                                                                <img src={NoAssets} alt="No Assets" className='w-[30%] ' />
+                                                                <p className='text-[#7F7F7F] text-[95%] font-[500]  mb-0'>Empty Slot</p>
+                                                            </div>
+                                                        </>
+                                                    )
+                                                }
+                                            </div>      
+                                                
+                                            
+                                            
                                         </div>
 
                                     </div>
@@ -628,8 +698,8 @@ const Dashboard = () => {
                                 }
 
                                 <div className="absolute lg:flex hidden justify-center items-center z-10 top-[30px] right-[30px] w-[45px] h-[45px] text-[#000] border-[2px] border-solid rounded-[50px] border-[#449552] text-[30px] font-[500] cursor-pointer hover:bg-[#449552] hover:text-[#ffffff] transition duration-300" onClick={CloseToIcon}>
-                                    <div className="border-[1px] w-[30px] border-[#000000] rotate-45 translate-y-[-1px] translate-x-[10px] my-[4px] mx-[0]"></div>
-                                    <div className="border-[1px] w-[30px] border-[#000000] -rotate-45 translate-y-[-1px] translate-x-[-10px] my-[4px] mx-[0]"></div>
+                                    <div className="border-[1px] w-[30px] border-[#000000] rotate-45  translate-x-[10px] my-[4px] mx-[0]"></div>
+                                    <div className="border-[1px] w-[30px] border-[#000000] -rotate-45 translate-x-[-10px] my-[4px] mx-[0]"></div>
                                 </div>
                             </div>
                         </animated.div>
@@ -678,18 +748,18 @@ const Dashboard = () => {
                                 <p className='mb-[0] text-[#595A5B] font-[500] text-[2vh] lg:text-[0.8vw]'>Average income</p>
 
                                 <div className='flex justify-between'>
-                                    <div className='flex flex-col justify-center items-center basis-[30%] px-[18px] py-[16px] lg:py-[18px] rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)]'>
-                                        <p className='text-[25px] lg:text-[33px] mb-[0] font-[600] font-Rajdhani'>{sliderValue.daily}</p>
+                                    <div className='flex flex-col justify-center items-center basis-[30%] px-[15px] py-[16px] lg:py-[18px] rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)]'>
+                                        <p className='text-[21px] lg:text-[28px] mb-[0] font-[600] font-Rajdhani'>{sliderValue.daily}</p>
                                         <p className='text-[14px] mb-[0] font-[500]'>Daily</p>
                                     </div>
 
-                                    <div className='flex flex-col justify-center items-center basis-[30%] px-[18px] py-[1vh] lg:py-[18px] rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)]'>
-                                        <p className='text-[25px] lg:text-[33px] mb-[0] font-[600] font-Rajdhani'>{sliderValue.monthly}</p>
+                                    <div className='flex flex-col justify-center items-center basis-[30%] px-[15px] py-[1vh] lg:py-[18px] rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)]'>
+                                        <p className='text-[21px] lg:text-[28px] mb-[0] font-[600] font-Rajdhani'>{sliderValue.monthly}</p>
                                         <p className='text-[14px] mb-[0] font-[500]'>Monthly</p>
                                     </div>
 
-                                    <div className='flex flex-col justify-center items-center basis-[30%] px-[18px] py-[1vh] lg:py-[18px] rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)]'>
-                                        <p className='text-[25px] lg:text-[33px] mb-[0] font-[600] font-Rajdhani'>{sliderValue.yearly}</p>
+                                    <div className='flex flex-col justify-center items-center basis-[30%] px-[15px] py-[1vh] lg:py-[18px] rounded-[10px] shadow-[0px_0px_34px_rgba(0,0,0,0.15)]'>
+                                        <p className='text-[21px] lg:text-[28px] mb-[0] font-[600] font-Rajdhani'>{sliderValue.yearly}</p>
                                         <p className='text-[14px] mb-[0] font-[500]'>Yearly</p>
                                     </div>
                                 </div>

@@ -89,7 +89,7 @@ const Register = ({closeRegisterModal}) => {
                     <label for="terms" className="text-[#1E9E39] font-[600] text-[10px] mb-0 ml-[5px] cursor-pointer">Check here to indicate that You’re at least 18 years old and You’ve read and greed out terms and conditions</label>
                 </div>
                 <div className="hidden md:flex">
-                    <button type='submit' className='w-[186px] items-center bg-[#449552] border-[2px] border-[#449552] rounded-[10px] text-[#fff] text-[30px] font-[600] text-center py-[15px] hover:bg-opacity-70 transition duration-300 shadow-[0px_4px_4px_rgb(0,0,0,0.25)]'>Sign Up</button>
+                    <button type='submit' className='w-[186px] items-center bg-[#449552] border-[2px] border-[#449552] rounded-[10px] text-[#fff] sm:text-[24px] text-[16px]  text-center py-[0.8vh] hover:bg-opacity-70 transition duration-300 shadow-[0px_4px_4px_rgb(0,0,0,0.25)]'>Sign Up</button>
                 </div>
             </div>
             <div className='md:w-[45%] space-y-[2vh] md:space-y-[4.62px] mb-[2vh]'>
@@ -98,11 +98,11 @@ const Register = ({closeRegisterModal}) => {
                 </div>
                 
                 <div className="shadow-[0px_0px_34px_rgba(0,0,0,0.15)] rounded-[10px]">
-                    <input type="password" id='password' name='password' value={password} placeholder='Enter Your Password' className='w-full px-[20px] py-[10px] md:py-[19px] md:text-center text-left text-[15px] font-[200] rounded-[10px] md:h-[66px] focus:outline-[#449552]' onChange={e => setPassword(e.target.value)} required/>
+                    <input type="password" id='password' name='password' value={password} placeholder='Enter Your Password' className='w-full px-[20px] py-[10px] md:py-[19px] md:text-center text-left text-[15px] font-[200] rounded-[10px] tracking-widest md:h-[66px] focus:outline-[#449552]' onChange={e => setPassword(e.target.value)} required/>
                 </div>
 
                 <div className="shadow-[0px_0px_34px_rgba(0,0,0,0.15)] rounded-[10px]">
-                    <input type="password" id='repassword' name='repassword' value={confirmPassword} placeholder='Confirm Your Password' className='w-full px-[20px] py-[10px] md:py-[19px] md:text-center text-left text-[15px] font-[200] rounded-[10px] md:h-[66px] focus:outline-[#449552]' onChange={e => setConfirmPassword(e.target.value)} required/>
+                    <input type="password" id='repassword' name='repassword' value={confirmPassword} placeholder='Confirm Your Password' className='w-full px-[20px] py-[10px] md:py-[19px] md:text-center text-left text-[15px] font-[200] rounded-[10px] tracking-widest md:h-[66px] focus:outline-[#449552]' onChange={e => setConfirmPassword(e.target.value)} required/>
                 </div>
                 
 

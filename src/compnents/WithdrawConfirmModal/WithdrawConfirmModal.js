@@ -220,7 +220,7 @@ const WithdrawConfirmModal = ({ modalTile, availableBalance, closeWithdrawModal 
                         <div className='px-[1.5vw] mt-[10px]'>
                             <div className='flex items-center justify-between mt-[0] w-full'>
                                 <p className='mb-[0] text-[#595A5B] font-[600] text-[2vh] lg:text-[0.9vw]'>Amount Received</p>
-                                <p className='mb-[0] text-[#595A5B] font-[600] text-[2vh] lg:text-[0.9vw]'>0 BTC</p>
+                                <p className='mb-[0] text-[#595A5B] font-[600] text-[2vh] lg:text-[0.9vw]'>{withdrawAmount===''?0:withdrawAmount} BTC</p>
                             </div>
                         </div>
 
