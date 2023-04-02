@@ -98,7 +98,7 @@ const Register = ({closeRegisterModal}) => {
                 </div>
                 
                 <div className="shadow-[0px_0px_34px_rgba(0,0,0,0.15)] rounded-[10px]">
-                    <input type="password" id='password' name='password' value={password} placeholder='Enter Your Password' className='w-full px-[20px] py-[10px] md:py-[19px] md:text-center text-left text-[15px] font-[200] rounded-[10px] tracking-widest md:h-[66px] focus:outline-[#449552]' onChange={e => setPassword(e.target.value)} required/>
+                    <input type="password" id='password' autocomplete="new-password" name='password' value={password} placeholder='Enter Your Password' className='w-full px-[20px] py-[10px] md:py-[19px] md:text-center text-left text-[15px] font-[200] rounded-[10px] tracking-widest md:h-[66px] focus:outline-[#449552]' onChange={e => setPassword(e.target.value)} required/>
                 </div>
 
                 <div className="shadow-[0px_0px_34px_rgba(0,0,0,0.15)] rounded-[10px]">

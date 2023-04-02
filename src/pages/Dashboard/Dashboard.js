@@ -585,7 +585,7 @@ const Dashboard = () => {
                                 </div>
                                 <p className="mb-[0px] text-[20px] lg:hidden block font-[500] font-Rajdhani" >MY ASSETS</p>
                                 {plansData.length > 0 ?
-                                    <div className='lg:shadow-[0px_0px_14px_rgba(0,0,0,0.1)] bg-no-repeat bg-[length:100%_80%] bg-bottom bg-[url("../src/assets/images/deposit_slider_back.png")] lg:bg-none lg:bg-[#ececec] bg-opacity-60 items-center px-[1vw] lg:px-[0.5vw] py-[1vh] rounded-[20px] text-[90%]'>
+                                    <div className='lg:shadow-[0px_0px_14px_rgba(0,0,0,0.1)] bg-no-repeat bg-[length:100%_80%] bg-bottom  lg:bg-none lg:bg-[#ececec] bg-opacity-60 items-center px-[1vw] lg:px-[0.5vw] py-[1vh] rounded-[20px] text-[90%]'>
                                         <div className="h-[78vh] lg:h-[50vh] space-y-[2vh] overflow-y-scroll px-[1vw] lg:pr-[0.5vw]">
                                             {
                                                 plansData.slice().reverse().map((plan, index) =>

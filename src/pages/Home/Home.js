@@ -318,9 +318,9 @@ const Home = () => {
                                 </div>
 
                                 <div className="flex flex-col justify-between text-left text-[#fff] h-full lg:basis-[40%] basis-[40%]">
-                                    <p className='mb-0 text-[13px] font-[600]'>INVESTORS <br/>JOINED  TODAY</p>
-                                    <p className='mb-0 text-[13px] font-[600]'>AVERAGE INCOME <br/>PER MONTH</p>
-                                    <p className='mb-0 text-[13px] font-[600]'>TODAY <br /> PAYOUTS</p>
+                                    <p className='mb-0 text-[18px] font-[600]'>INVESTORS <br/>JOINED  TODAY</p>
+                                    <p className='mb-0 text-[18px] font-[600]'>AVERAGE INCOME <br/>PER MONTH</p>
+                                    <p className='mb-0 text-[18px] font-[600]'>TODAY <br /> PAYOUTS</p>
                                 </div>
                             </div>
                         </div>

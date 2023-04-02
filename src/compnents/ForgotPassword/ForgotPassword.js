@@ -99,12 +99,12 @@ const ForgotPassword = () => {
                                     </div>
 
                                     <div className="shadow-[0px_0px_34px_rgba(0,0,0,0.15)] rounded-[10px]">
-                                        <input type="password" value={password} placeholder="Enter Your new password" className="w-full px-[20px] py-[13px] md:py-[19px] text-left md:text-center text-[15px] font-[200] md:h-[66px] focus:outline-[#449552] rounded-[10px]" onChange={e => setPassword(e.target.value)} required />
+                                        <input type="password" autocomplete="new-password" value={password} placeholder="Enter Your new password" className="w-full px-[20px] py-[13px] md:py-[19px] text-left md:text-center text-[15px] font-[200] md:h-[66px] focus:outline-[#449552] rounded-[10px]" onChange={e => setPassword(e.target.value)} required />
                                     </div>
                                     
 
                                     <div className="shadow-[0px_0px_34px_rgba(0,0,0,0.15)] rounded-[10px] ">
-                                        <input type="password" value={confirmPassword} placeholder="Confirm Your new password" className="w-full px-[20px] py-[13px] md:py-[19px] text-left md:text-center text-[15px] font-[200] md:h-[66px] focus:outline-[#449552] rounded-[10px]" onChange={e => setConfirmPassword(e.target.value)} required />
+                                        <input type="password" autocomplete="new-password" value={confirmPassword} placeholder="Confirm Your new password" className="w-full px-[20px] py-[13px] md:py-[19px] text-left md:text-center text-[15px] font-[200] md:h-[66px] focus:outline-[#449552] rounded-[10px]" onChange={e => setConfirmPassword(e.target.value)} required />
                                     </div>
                                 
                                     <div className="mt-[21px] text-center mb-[16px] font-rajdhani w-full">
