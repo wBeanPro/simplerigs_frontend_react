@@ -13,6 +13,7 @@ import Company from './pages/Company/Company';
 import Terms from './pages/Terms/Terms';
 import Faq from './pages/Faq/Faq';
 import Profile from './pages/Profile/Profile';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -53,7 +54,8 @@ function App() {
   return (
     <div className="App overflow-hidden">
 		<Routes>
-			<Route path="/*" exact element={<Landing/>} />
+			<Route path="/" exact element={<Landing/>} />
+			{/* <Route path="/404" exact element={NotFoundPage} /> */}
 			<Route path="bitcoincheck" exact element={<BitcoinCheck/>} />
 			<Route path="creditcardcheck" exact element={<CreditcardCheck/>} />
 			<Route path="dashboard" exact element={<Dashboard/>} />
@@ -64,6 +66,7 @@ function App() {
 			<Route path="faqs" exact element={<Faq/>} />
 			<Route path="terms" exact element={<Terms/>} />
 			<Route path="profile" exact element={<Profile/>} />
+			<Route path="*" exact element={<NotFoundPage/>} status={404}/>
 		</Routes>
 		<ToastContainer theme="colored" />
     </div>
