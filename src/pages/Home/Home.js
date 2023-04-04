@@ -306,7 +306,7 @@ const Home = () => {
                 {/* Invest Section */}
                 <div className="flex justify-center items-center relative w-full mt-[3vh] font-rajdhani">
                     <div className="flex md:flex-row flex-col relative bg-[#8BD66C] rounded-[20px] w-[90%] lg:w-[55%] md:w-[80%] md:pr-[1.2vw] md:pl-[2vw] md:py-[5vh] py-[41px] px-[24px] shadow-[0px_4px_44px_rgba(0,0,0,0.25)]">
-                        <div className="flex relative justify-end basis-[100%] md:basis-[70%] lg:basis-[50%]">
+                        <div className="flex relative justify-end basis-[100%] md:basis-[70%] lg:basis-[50%] z-20">
                             <div className="self-center absolute lg:left-0 sm:left-[30px] left-0 top-[20px] md:w-[30%]">
                                 <img src={CoinIcon} width='623' height='415' alt="coin" className='w-[100px]  sm:w-[14vw]  md:w-[10vw] '/>
                             </div>
@@ -318,9 +318,9 @@ const Home = () => {
                                 </div>
 
                                 <div className="flex flex-col justify-between text-left text-[#fff] h-full lg:basis-[40%] basis-[40%]">
-                                    <p className='mb-0 text-[18px] font-[600]'>INVESTORS <br/>JOINED  TODAY</p>
-                                    <p className='mb-0 text-[18px] font-[600]'>AVERAGE INCOME <br/>PER MONTH</p>
-                                    <p className='mb-0 text-[18px] font-[600]'>TODAY <br /> PAYOUTS</p>
+                                    <p className='mb-0 lg:text-[18px] text-[14px] font-[600]'>INVESTORS <br/>JOINED  TODAY</p>
+                                    <p className='mb-0 lg:text-[18px] text-[14px] font-[600]'>AVERAGE INCOME <br/>PER MONTH</p>
+                                    <p className='mb-0 lg:text-[18px] text-[14px] font-[600]'>TODAY <br /> PAYOUTS</p>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +333,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <img src={Leave} alt="leave" className='absolute right-[22px] bottom-0 h-[121px] md:w-[110px] md:h-[193px]'/>
+                        <img src={Leave} alt="leave" className='absolute z-10 right-[22px] bottom-0 h-[121px] md:w-[110px] md:h-[193px]'/>
                     </div>
                 </div>
                 {/* Calculator Section */}
@@ -357,7 +357,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="lg:basis-[55%] md:basis-[55%]">
-                            <div className="flex bg-[#8BD66C] bg-opacity-[39%] py-[20px] px-[20px] lg:pt-[27px] lg:pr-[32px] lg:pb-[30px] lg:pl-[42px] md:px-[20px] md:py-[20px] pl-[20px] pr-[10px] font-[700] font-rajdhani justify-between sm:h-auto h-[240px]">
+                            <div className="flex bg-[#8BD66C] bg-opacity-[39%] py-[20px] px-[20px] lg:pt-[27px] lg:pr-[32px] lg:pb-[30px] lg:pl-[42px] md:px-[20px] md:py-[20px] pl-[20px] pr-[10px] font-[700] font-rajdhani justify-between sm:h-auto h-[260px]">
                                 <div className="">
                                     <div className="">
                                         <p className='text-[18px] md:text-[24px]'>CALCULATOR</p> 
