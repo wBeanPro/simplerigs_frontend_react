@@ -14,7 +14,7 @@ const Login = ({closeLoginModal}) => {
         axios.post( process.env.REACT_APP_API_HOST+'api/userLogin', data)
         .then((response) =>{
             console.log(response);
-            if(response.data.result){
+            if(response.data){
                 localStorage.clear();
                 localStorage.setItem('user_id', response.data.id);
                 localStorage.setItem('access_token', response.data.access_token);
@@ -31,17 +31,18 @@ const Login = ({closeLoginModal}) => {
                 } else{
                     localStorage.setItem('logged_in', true);
                     navigate("/dashboard");
-                    // toast.success(response.data.message, {
-                    //     position: "top-center",
-                    //     autoClose: 2000,
-                    //     closeOnClick: true,
-                    //     hideProgressBar: true,
-                    // }); 
+                    toast.success(response.data.message, {
+                        position: "top-right",
+                        autoClose: 2000,
+                        closeOnClick: true,
+                        hideProgressBar: true,
+                    }); 
                 }
                 // localStorage.setItem('logged_in', true);
                 // navigate("/dashboard");
             }else{
-                toast.warn(response.data.message, {
+                // console.log("result",response.data);
+                toast.warn("Invalid email or password!!!", {
                     position: "top-right",
                     autoClose: 2000,
                     closeOnClick: true,
@@ -52,7 +53,7 @@ const Login = ({closeLoginModal}) => {
         .catch((error) => {
             console.log(error.response);
             if(error.response.status === 500){
-                dispatch(setLogInModalShow(false));
+                // dispatch(setLogInModalShow(false));
                 toast.error(error.response.data.message, {
                     position: "top-right",
                     autoClose: 2000,
